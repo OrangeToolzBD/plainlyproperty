@@ -1,0 +1,107 @@
+---
+// B2 — the tool. Three fields: community, property type, size.
+//
+// 03-PAGE-SPECS/01: "Returns an indicative range instantly, then offers the written report.
+// Never asks for a phone number before showing a number - that is the whole reason people
+// leave these pages."
+//
+// The range is computed in the browser from a shipped dataset, so no request is made and
+// nothing is collected to see it. When src/data/valuation-ranges.json has no communities
+// the tool renders a stated gap rather than a fabricated number.
+import data from '../data/valuation-ranges.json';
+import NeedsSource from './NeedsSource.astro';
+import SourceLine from './SourceLine.astro';
+
+const communities = data.communities ?? [];
+const hasData = communities.length > 0;
+
+const types = [...new Set(communities.flatMap((c) => Object.keys(c.types ?? {})))];
+---
+
+<section class="tool">
+  <h2>What is my Dubai property worth?</h2>
+
+  {
+    hasData ? (
+      <>
+        <form id="valuation-tool" novalidate>
+          <div class="two-col">
+            <div class="field">
+              <label for="vt-community">Community</label>
+              <select id="vt-community" name="community" required>
+                {communities.map((c) => (
+                  <option value={c.name}>{c.name}</option>
+                ))}
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="vt-type">Property type</label>
+              <select id="vt-type" name="type" required>
+                {types.map((t) => (
+                  <option value={t}>{t[0].toUpperCase() + t.slice(1)}</option>
+                ))}
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="vt-size">Size (sq ft)</label>
+              <input id="vt-size" name="size" type="number" min="100" max="60000" step="1" required />
+            </div>
+          </div>
+
+          <button type="submit">Get the range</button>
+          <p class="hint">No email or phone number required to see the range.</p>
+        </form>
+
+        {/* Reserved height so producing a result does not shift the page — CLS < 0.1. */}
+        <div id="valuation-result" role="status" aria-live="polite" style="min-height:5.5rem"></div>
+
+        <SourceLine source={data.source} checked={data.checked} />
+
+        <script is:inline define:vars={{ communities }}>
+          const form = document.getElementById('valuation-tool');
+          const out = document.getElementById('valuation-result');
+          const money = new Intl.NumberFormat('en-AE', {
+            style: 'currency',
+            currency: 'AED',
+            maximumFractionDigits: 0,
+          });
+
+          form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const community = communities.find((c) => c.name === form.community.value);
+            const band = community?.types?.[form.type.value];
+            const size = Number(form.size.value);
+
+            if (!band || !size) {
+              out.innerHTML =
+                '<p>No transaction band is published for that combination. Request the written report and it will be produced from comparables instead.</p>';
+              return;
+            }
+
+            out.innerHTML =
+              '<p class="answer">Indicative range: <strong>' +
+              money.format(band.psfLow * size) +
+              ' – ' +
+              money.format(band.psfHigh * size) +
+              '</strong></p><p class="source-line">An indicative range from recorded transactions in this community, not a valuation. A written valuation of your specific unit is produced by the licensed partner named below.</p>';
+          });
+        </script>
+      </>
+    ) : (
+      <>
+        <p>
+          The indicative range needs a price-per-square-foot band per community, taken from
+          Dubai Land Department transaction records. That dataset is not loaded yet, so this
+          page does not show a number here:{' '}
+          <NeedsSource what="DLD price-per-sq-ft bands by community and property type" />
+        </p>
+        <p>
+          Nothing is estimated in its place. Request the written report below and the range is
+          produced from comparable transactions in your own building.
+        </p>
+      </>
+    )
+  }
+</section>

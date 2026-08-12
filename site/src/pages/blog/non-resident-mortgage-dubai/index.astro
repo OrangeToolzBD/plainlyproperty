@@ -1,0 +1,164 @@
+---
+// Page 13 — /blog/non-resident-mortgage-dubai/ · BLOG · Template C
+// Research depth HIGH per spec: "current LTV caps and lender list change often".
+// Which is exactly why this page states the structure and marks the numbers.
+import PageShell from '../../../layouts/PageShell.astro';
+import DataTable from '../../../components/DataTable.astro';
+import FaqList from '../../../components/FaqList.astro';
+import ValuationCrossLink from '../../../components/ValuationCrossLink.astro';
+import NeedsSource from '../../../components/NeedsSource.astro';
+import { byPath } from '../../../lib/pages.js';
+
+const page = byPath('/blog/non-resident-mortgage-dubai/');
+
+const answer =
+  'Non-residents can borrow against Dubai property at a lower loan-to-value than residents, ' +
+  'meaning a larger deposit. Fewer banks lend to non-residents at all, the documentation ' +
+  'required from overseas is heavier, and the rate is usually higher. The current caps and ' +
+  'the lending banks change often enough to check directly.';
+
+const faqs = [
+  {
+    q: 'Can a non-resident get a mortgage in Dubai?',
+    a:
+      'Yes, from a subset of UAE banks. The differences from a resident mortgage are a lower ' +
+      'loan-to-value cap, a shorter list of lenders willing to consider the application, and ' +
+      'more documentation to evidence income earned abroad.',
+  },
+  {
+    q: 'What deposit does a non-resident need in Dubai?',
+    a:
+      'More than a resident, because the loan-to-value cap is lower. The exact figure is set ' +
+      'by the lender within the regulatory cap and changes, so treat any number older than a ' +
+      'few months as indicative and confirm it with the bank.',
+  },
+  {
+    q: 'Which banks lend to non-residents in Dubai?',
+    a:
+      'A subset of UAE banks, and the list changes as lending appetite shifts. Confirm ' +
+      'directly rather than relying on a published list — a bank that lent to non-residents ' +
+      'last year may not this year.',
+  },
+  {
+    q: 'What documents does a non-resident need?',
+    a:
+      'Broadly: passport, proof of address, six to twelve months of bank statements, proof of ' +
+      'income in its country of origin, and a credit report from your home country. Documents ' +
+      'issued abroad often need attestation, which adds time.',
+  },
+  {
+    q: 'Are rates higher for non-residents?',
+    a:
+      'Usually, reflecting how lenders price the additional risk and the harder recovery ' +
+      'position. Compare the total cost including arrangement and valuation fees rather than ' +
+      'the headline rate alone.',
+  },
+];
+---
+
+<PageShell
+  page={page}
+  h1="Non-resident mortgages in Dubai"
+  answer={answer}
+  faqs={faqs}
+>
+  <h2>How does a non-resident mortgage differ from a resident one?</h2>
+
+  <DataTable
+    caption="Non-resident and resident borrowing compared"
+    columns={['', 'Non-resident', 'UAE resident']}
+    rows={[
+      [
+        'Loan-to-value cap',
+        '<span class="pending">[NEEDS SOURCE: current non-resident LTV cap]</span>',
+        '<span class="pending">[NEEDS SOURCE: current resident LTV cap]</span>',
+      ],
+      ['Deposit required', 'Higher, following the lower cap', 'Lower'],
+      ['Lenders available', 'A subset of UAE banks', 'Most UAE banks'],
+      ['Rate', 'Usually higher', 'Standard'],
+      ['Documentation', 'Heavier, often requiring attestation', 'Standard UAE documents'],
+      ['Income evidence', 'From the country where it is earned', 'UAE salary certificate'],
+      [
+        'Processing time',
+        '<span class="pending">[NEEDS SOURCE: typical non-resident processing time]</span>',
+        '<span class="pending">[NEEDS SOURCE: typical resident processing time]</span>',
+      ],
+    ]}
+    source="Comparison of non-resident and resident lending terms in the UAE"
+  />
+
+  <p>
+    The empty cells are the ones that change most often, which is precisely why they are marked
+    rather than filled with a number from a year-old article. A borrower who budgets a deposit
+    from a stale loan-to-value cap discovers the gap at the worst possible moment:{' '}
+    <NeedsSource what="current UAE Central Bank LTV caps for non-residents and residents, plus the current list of lending banks, each with the date checked" />
+  </p>
+
+  <h2>What will a lender want to see?</h2>
+
+  <ul class="two-col">
+    <li>Passport and, where applicable, a second identity document</li>
+    <li>Proof of address in your country of residence</li>
+    <li>Six to twelve months of bank statements</li>
+    <li>Proof of income — payslips, or accounts if self-employed</li>
+    <li>A credit report from your home country</li>
+    <li>Details of existing borrowing anywhere in the world</li>
+    <li>The sale and purchase agreement for the property</li>
+    <li>A valuation, which the lender will commission itself</li>
+  </ul>
+
+  <p>
+    Documents issued outside the UAE frequently need attestation, and attestation is the step
+    that adds weeks rather than days. Start it before you need it.
+  </p>
+
+  <h2>What does the lender’s valuation change?</h2>
+
+  <p>
+    Everything, if it comes in low. The bank lends a percentage of the valuation, not a
+    percentage of the price you agreed. If the valuation lands below the purchase price, the
+    shortfall is cash you must find, in addition to the deposit you had already planned for.
+  </p>
+
+  <p>
+    That risk is higher in a softening market than a rising one, and this is a softening one:
+    H1 2026 residential transactions in Dubai fell 13.6% year on year, and Q2 2026 saw both
+    prices and rents decline. A price agreed against last year’s comparables can value
+    differently against this year’s.
+  </p>
+
+  <h2>Who is this route realistic for?</h2>
+
+  <p><strong>Workable if:</strong></p>
+
+  <ul>
+    <li>Your income is documented and verifiable in its country of origin</li>
+    <li>You can fund the larger deposit the lower cap implies</li>
+    <li>You have time for attestation and cross-border processing</li>
+    <li>The property is a completed, conventional unit</li>
+  </ul>
+
+  <p><strong>Difficult if:</strong></p>
+
+  <ul>
+    <li>Your income is irregular or hard to evidence abroad</li>
+    <li>You have no credit history a UAE lender can read</li>
+    <li>You need to complete quickly</li>
+    <li>You are buying an unusual property type</li>
+  </ul>
+
+  <p>
+    A broker earns their 0.5–1% most clearly on exactly this kind of application, because the
+    binding constraint is knowing which lenders will look at your profile at all —{' '}
+    <a href="/blog/mortgage-broker-dubai/">what Dubai mortgage brokers cost</a> covers when
+    that is worth it and when it is not.
+  </p>
+
+  <ValuationCrossLink
+    before="If you already own in Dubai and are considering borrowing against it rather than buying again, "
+    anchor="a current written valuation"
+    after=" is what any lender will start from, so it is worth having your own."
+  />
+
+  <FaqList faqs={faqs} />
+</PageShell>

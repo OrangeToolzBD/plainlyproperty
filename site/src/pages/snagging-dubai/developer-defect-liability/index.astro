@@ -1,0 +1,154 @@
+---
+// Page 07 — /snagging-dubai/developer-defect-liability/ · DOOR · Template B
+// Format per spec: deadline-led explainer. "Urgency is real here, not manufactured."
+//
+// No measured search volume. It exists to hold the cluster's authority and to answer the
+// question the cost and checklist pages both raise.
+import PageShell from '../../../layouts/PageShell.astro';
+import DataTable from '../../../components/DataTable.astro';
+import FaqList from '../../../components/FaqList.astro';
+import ValuationCrossLink from '../../../components/ValuationCrossLink.astro';
+import NeedsSource from '../../../components/NeedsSource.astro';
+import { byPath } from '../../../lib/pages.js';
+
+const page = byPath('/snagging-dubai/developer-defect-liability/');
+
+const answer =
+  'Developers in the UAE carry a one-year liability for defects and ten years for structural ' +
+  'failure, running from handover. The one-year window is the one that expires unnoticed. A ' +
+  'claim made inside it is the developer’s cost to remedy; the same defect raised afterwards ' +
+  'is usually yours.';
+
+const faqs = [
+  {
+    q: 'How long is the defect liability period in Dubai?',
+    a:
+      'One year for general defects and ten years for structural failure, running from ' +
+      'handover. The one-year period is the one most owners lose, because it expires while ' +
+      'the unit is still being furnished.',
+  },
+  {
+    q: 'What counts as a structural defect rather than a snag?',
+    a:
+      'Structural liability covers failure of the building’s structure — foundations, frame, ' +
+      'load-bearing elements. A misaligned wardrobe door is a snag. A crack propagating ' +
+      'through a load-bearing element is not, and the ten-year period is what applies to it.',
+  },
+  {
+    q: 'What happens if I miss the one-year window?',
+    a:
+      'The defect does not stop existing, but the route to having someone else pay for it ' +
+      'narrows sharply. Ten-year structural liability continues; general defects generally ' +
+      'become the owner’s cost, which is why the window matters more than the report does.',
+  },
+  {
+    q: 'Does the liability period restart when the developer fixes something?',
+    a:
+      'Do not assume so. Whether remedial work carries its own liability depends on the ' +
+      'contract, and it is worth having answered in writing before you accept the fix rather ' +
+      'than afterwards.',
+  },
+  {
+    q: 'How do I make a defect liability claim?',
+    a:
+      'In writing, inside the period, with photographs, unit locations and dates, and keep a ' +
+      'dated copy of what you sent. A documented snagging report issued before handover is ' +
+      'the strongest version of this, because it predates your occupation of the unit.',
+  },
+];
+---
+
+<PageShell
+  page={page}
+  h1="Developer defect liability in Dubai"
+  answer={answer}
+  faqs={faqs}
+>
+  <h2>What are the two deadlines?</h2>
+
+  <DataTable
+    caption="Defect liability periods running from handover"
+    columns={['Liability', 'Period', 'Covers', 'Runs from']}
+    rows={[
+      [
+        'General defects',
+        'One year',
+        'Workmanship and installation defects — finishes, joinery, MEP installation',
+        'Handover',
+      ],
+      [
+        'Structural',
+        'Ten years',
+        'Failure of the structure itself, including foundations and load-bearing elements',
+        'Handover',
+      ],
+    ]}
+    source="UAE defect liability framework"
+  />
+
+  <p>
+    Those two periods are the entire reason snagging is timed the way it is. The verbatim
+    governing text, with its article numbers and issuing authority, belongs on this page — this
+    is the page a reader arrives at wanting the citation, and a summary is not a citation:{' '}
+    <NeedsSource what="UAE Civil Code articles on decennial and defect liability, quoted verbatim with article numbers and authority" />
+  </p>
+
+  <h2>Why does the one-year window get missed?</h2>
+
+  <p>
+    Because it runs during the least attentive year of ownership. Handover, fit-out, moving in,
+    possibly a tenant. Defects that show up seasonally — a balcony that only ponds in heavy
+    rain, an air-conditioning unit that only struggles in August — surface months after
+    handover, and by the time they are obvious the window is short.
+  </p>
+
+  <p>
+    The practical defence is to inspect before accepting rather than after moving in. A
+    documented snagging report issued at handover predates your occupation of the unit, which
+    is a materially different position to reporting the same defect eight months later.{' '}
+    <a href="/snagging-dubai/">Snagging in Dubai</a> covers how that inspection is sequenced,
+    and it costs AED 666–999 for a typical apartment.
+  </p>
+
+  <h2>What do people get wrong about the liability?</h2>
+
+  <p>
+    They believe the report is what obliges the developer. It is not. The obligation comes from
+    the contract and the law; the report is evidence that a defect existed and when. This
+    matters because owners sometimes skip the inspection on the reasoning that they can simply
+    report defects as they find them — which is true, and much weaker, because the argument
+    then turns on whether the defect was there at handover or arose from use.
+  </p>
+
+  <p>
+    The second error is accepting a partial fix. The developer closes fifteen of twenty items,
+    the owner signs off the list, and the remaining five are now disputed history. Re-inspect
+    against the original list, item by item, before signing anything.
+  </p>
+
+  <h2>What should you keep, and for how long?</h2>
+
+  <ul>
+    <li>The original snagging report, dated, with photographs</li>
+    <li>Every item of correspondence with the developer, with dates</li>
+    <li>The re-inspection report confirming what was actually closed</li>
+    <li>The handover acceptance document and the date on it</li>
+    <li>Warranties for installed equipment, which run on their own clocks</li>
+  </ul>
+
+  <p>
+    Keep the structural set for ten years, not one. The ten-year period is the one owners
+    discard paperwork against, and it is the one where the remedial cost is large enough to
+    matter.{' '}
+    <a href="/handover-dubai/">The Dubai handover checklist</a> lists what you should be holding
+    when you take the keys.
+  </p>
+
+  <ValuationCrossLink
+    before="If a structural issue has emerged and you are weighing whether to remedy it or sell, "
+    anchor="a current valuation of the unit"
+    after=" tells you which of those is actually the cheaper decision."
+  />
+
+  <FaqList faqs={faqs} />
+</PageShell>

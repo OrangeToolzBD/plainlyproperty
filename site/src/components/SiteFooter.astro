@@ -1,0 +1,62 @@
+---
+// licence line · links · last-reviewed date — 04-DESIGN/02-page-templates.md.
+//
+// The "licence line" here states the absence of one. Plainly is not a brokerage, and
+// 07-COMPLIANCE says that has to be visible rather than implied.
+import { SITE, token } from '../lib/site.js';
+import { PAGES, CLUSTERS } from '../lib/pages.js';
+
+const group = (key) => PAGES.filter((p) => p.cluster === key);
+const email = token(SITE.email, 'EMAIL');
+const emailPending = SITE.email === null;
+---
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      {
+        Object.entries(CLUSTERS)
+          .filter(([key]) => key !== 'blog')
+          .map(([key, cluster]) => (
+            <nav aria-label={cluster.label}>
+              <h2>{cluster.label}</h2>
+              <ul>
+                {group(key).map((p) => (
+                  <li>
+                    <a href={p.path}>{p.crumb}</a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          ))
+      }
+
+      <nav aria-label="Guides">
+        <h2>Guides</h2>
+        <ul>
+          {
+            group('blog').map((p) => (
+              <li>
+                <a href={p.path}>{p.crumb}</a>
+              </li>
+            ))
+          }
+          <li><a href="/contact/">Contact</a></li>
+          <li><a href="/privacy/">Privacy notice</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <p class="licence-line">
+      {SITE.definition} It is not a licensed property brokerage, holds no RERA registration
+      and does not advertise property. Valuations, sales and lettings are carried out by
+      licensed partners, named on the page where they appear.
+    </p>
+
+    <p class="source-line">
+      Contact: {
+        emailPending ? <span class="pending">{email}</span> : <a href={`mailto:${email}`}>{email}</a>
+      } · Last reviewed {SITE.lastReviewed}
+    </p>
+  </div>
+</footer>

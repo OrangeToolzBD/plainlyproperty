@@ -1,0 +1,32 @@
+{
+ "snagging": {
+  "n": 12,
+  "median_rd": 79,
+  "min_rd": 33,
+  "max_rd": 894
+ },
+ "management": {
+  "n": 8,
+  "median_rd": 1339,
+  "min_rd": 191,
+  "max_rd": 2083
+ },
+ "holiday": {
+  "n": 10,
+  "median_rd": 69,
+  "min_rd": 1,
+  "max_rd": 844
+ },
+ "mortgage": {
+  "n": 5,
+  "median_rd": 198,
+  "min_rd": 30,
+  "max_rd": 1406
+ },
+ "portal": {
+  "n": 3,
+  "median_rd": 15311,
+  "min_rd": 6376,
+  "max_rd": 18757
+ }
+}

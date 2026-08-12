@@ -1,0 +1,44 @@
+You are researching ONE page for a Dubai property website. Return FACTS ONLY,
+each with the source URL beside it. You are not writing the page.
+
+PAGE:            {slug}
+TARGET KEYWORD:  {primary}  ({vol} searches/month, AED {cpc} per click)
+PAGE FORMAT:     {fmt}
+WHY IT EXISTS:   {role_note}
+
+FIND AND RETURN, each as a separate line with its source URL:
+
+1. PRICES. Every published price relevant to this page, from named Dubai operators or named
+   government schedules. Give the figure, the unit, the operator or authority, and the date it
+   was published. Minimum 6 separate priced data points. If a company hides its price behind a
+   contact form, record that as "not published" against its name - that absence is itself
+   useful, because publishing the number is how this page wins the click.
+
+2. THE RULE. The governing regulation, permit or law, quoted verbatim, with the article or
+   section number and the issuing authority (DLD, RERA, DET, GDRFA, ICP, UAE Civil Code).
+   Never paraphrase a regulation. Quote it.
+
+3. TIMINGS. Real processing times, deadlines and validity windows, from the authority's own
+   page - not from a blog.
+
+4. THE NUMBERS BEHIND THE ADVICE. Whatever quantitative backing this page needs: occupancy
+   rates, service charge per square foot, achieved yields, LTV caps, fee percentages. Named
+   source, dated.
+
+5. WHAT THE INCUMBENTS OMIT. Open the top 5 ranking pages for the target keyword. List the
+   questions each one leaves unanswered. This is the brief for the section that beats them.
+
+6. THE COUNTER-EXAMPLE. One documented case where the standard advice is wrong, or a cost
+   people are commonly surprised by. Sourced.
+
+RULES:
+- If you cannot source something, write NOT FOUND. Do not estimate, do not infer, do not fill
+  a gap with a plausible number. A page with three honest gaps is publishable; a page with one
+  invented figure is not.
+- Prefer the primary source. A search snippet saying a fee is AED 750 is not a source for
+  AED 750 - open the operator's own page or the authority's own schedule.
+- Flag anything older than 18 months as STALE.
+- Dubai-specific only. Abu Dhabi and Sharjah rules differ and must not be mixed in.
+
+Return as JSON: {{"prices":[...],"rule":{{...}},"timings":[...],"numbers":[...],
+"gaps_in_top5":[...],"counter_example":{{...}},"not_found":[...],"stale":[...]}}

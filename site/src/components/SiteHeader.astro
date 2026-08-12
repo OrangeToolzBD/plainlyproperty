@@ -1,0 +1,38 @@
+---
+// logo · nav (4 items max) · phone number visible — 04-DESIGN/02-page-templates.md.
+//
+// Plain markup, no JavaScript. 02-ARCHITECTURE/internal-linking-map.md:14 — "A
+// JavaScript-only menu hides the entire link graph from crawlers."
+import { SITE, token } from '../lib/site.js';
+import { NAV } from '../lib/pages.js';
+
+const here = Astro.url.pathname;
+const phone = token(SITE.phone, 'PHONE');
+const phonePending = SITE.phone === null;
+---
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/">{SITE.name}</a>
+
+    <nav class="site-nav" aria-label="Main">
+      {
+        NAV.map((p) => (
+          <a href={p.path} aria-current={here === p.path ? 'page' : undefined}>
+            {p.nav}
+          </a>
+        ))
+      }
+    </nav>
+
+    <span class="header-phone">
+      {
+        phonePending ? (
+          <span class="pending">{phone}</span>
+        ) : (
+          <a href={`tel:${phone.replace(/\s/g, '')}`}>{phone}</a>
+        )
+      }
+    </span>
+  </div>
+</header>

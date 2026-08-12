@@ -1,0 +1,18 @@
+---
+// B7 — the only CTA on a DOOR page, and the single reason the other twelve pages exist.
+//
+// 02-ARCHITECTURE/internal-linking-map.md: one sentence, late in the body, phrased as the
+// reader's own next question. Not a banner. Not a sidebar.
+// "Never 'Contact us for a free valuation!' — that is an advert, and it converts worse."
+//
+// Written fresh per page, so the sentence is a prop. `anchor` is the descriptive anchor
+// text; the gate counts links to VALUATION and fails a page carrying more than one.
+import { VALUATION } from '../lib/pages.js';
+
+const { before, anchor, after = '' } = Astro.props;
+---
+
+<p class="cross-link">
+  {before}
+  <a href={VALUATION}>{anchor}</a>{after}
+</p>

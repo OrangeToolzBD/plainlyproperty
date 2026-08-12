@@ -1,0 +1,47 @@
+---
+// Not in 03-PAGE-SPECS, but 02-ARCHITECTURE/robots.txt already disallows /thank-you/,
+// so the kit assumes it exists. noindex as well as disallowed: robots.txt stops crawling,
+// not indexing from an external link.
+//
+// This is where the form's conversion event fires — 08-LAUNCH/01-pre-launch-checklist.md:
+// "Conversion tracking on the form, not on the page view."
+import UtilityLayout from '../../layouts/UtilityLayout.astro';
+import { SITE, token } from '../../lib/site.js';
+---
+
+<UtilityLayout
+  title="Request received — Plainly"
+  description="Your valuation request has been received. What happens next, when the call comes and when the written report arrives: 15 minutes and 24 hours respectively."
+  noindex={true}
+  h1="Request received"
+>
+  <p class="answer">
+    Your request has gone to the licensed partner who produces the valuation. Expect a call
+    within 15 minutes during operating hours, and the written report by email within 24 hours.
+  </p>
+
+  <h2>What happens next</h2>
+  <ol>
+    <li>A call to confirm the building, the unit size and whether it is tenanted</li>
+    <li>Comparable transactions pulled for your building from Land Department records</li>
+    <li>A written report by email within 24 hours, listing every transaction it used</li>
+  </ol>
+
+  <h2>If you do not hear back</h2>
+  <p>
+    Call <span class="pending">{token(SITE.phone, 'PHONE')}</span> directly. A request that
+    goes unanswered is a fault at this end, not a queue.
+  </p>
+
+  <h2>While you wait</h2>
+  <ul>
+    <li>
+      <a href="/property-valuation-dubai/how-it-works/">How the valuation is produced</a> —
+      the three methods and what each one is for
+    </li>
+    <li>
+      <a href="/property-valuation-dubai/golden-visa/">The golden visa threshold</a> — if AED
+      2 million is the number you care about
+    </li>
+  </ul>
+</UtilityLayout>

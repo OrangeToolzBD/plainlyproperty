@@ -1,0 +1,14 @@
+---
+// B4 — the governing regulation, quoted verbatim with its article number and authority.
+// 06-CONTENT-PRODUCTION/prompt_research.txt: "Never paraphrase a regulation. Quote it."
+const { quote, article, authority, href } = Astro.props;
+---
+
+<blockquote class="rule">
+  <p>{quote}</p>
+  <cite>
+    {article}
+    {authority && <> — {authority}</>}
+    {href && <> · <a href={href} rel="noopener" target="_blank">Read the source</a></>}
+  </cite>
+</blockquote>

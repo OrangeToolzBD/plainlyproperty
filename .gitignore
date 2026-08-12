@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# Build output — regenerable from source
+site/dist/
+site/.astro/
+
+# macOS archive junk that came in with the zip
+__MACOSX/
+.DS_Store
+._*
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Local tooling / secrets
+.claude/settings.local.json
+.env
+.env.*
+*.pem
+*.key
+
+# Logs
+*.log
+npm-debug.log*

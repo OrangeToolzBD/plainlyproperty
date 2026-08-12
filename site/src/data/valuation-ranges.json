@@ -1,0 +1,27 @@
+{
+  "_README": [
+    "Feeds the indicative range in block B2 of /property-valuation-dubai/.",
+    "",
+    "This file is EMPTY on purpose. The tool needs a price-per-square-foot band per",
+    "community and property type, and 03-PAGE-SPECS/01 marks this page's research depth as",
+    "'HIGH - needs live DLD transaction comparables per community'. No such dataset ships",
+    "with the launch kit.",
+    "",
+    "07-COMPLIANCE/trakheesi-and-claims.md allows an aggregate, sourced figure ('apartments",
+    "in Dubai Marina transacted between AED 1.1M and 1.9M in Q2 2026') and forbids anything",
+    "naming a specific unit. Fill this with aggregates from Dubai Land Department",
+    "transaction data and the tool stays on the allowed side of that line.",
+    "",
+    "While `communities` is empty the tool renders a stated-gap notice instead of a number,",
+    "and scripts/gate.mjs fails the production build.",
+    "",
+    "Shape of each entry:",
+    "  { \"name\": \"Dubai Marina\",",
+    "    \"types\": { \"apartment\": { \"psfLow\": 0, \"psfHigh\": 0 } } }",
+    "psfLow/psfHigh are AED per square foot, from transactions in the stated window."
+  ],
+  "source": null,
+  "window": null,
+  "checked": null,
+  "communities": []
+}

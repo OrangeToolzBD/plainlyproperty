@@ -1,0 +1,58 @@
+You are writing one page for a Dubai property website owned by a licensed
+RERA broker. Write the page body only. No preamble, no explanation, no meta-commentary.
+
+=== THE PAGE ===
+URL:        {slug}
+TITLE TAG:  {title}
+META:       {meta}
+FORMAT:     {fmt}
+WORD COUNT: 900-1,300 words of prose. Tables do not count toward it.
+
+=== TARGET KEYWORDS (from measured search data - do not invent others) ===
+{kwblock}
+
+=== RESEARCH PACK - EVERY FIGURE YOU MAY USE ===
+{research_json}
+
+=== HOW TO WRITE IT ===
+
+1. OPEN WITH THE ANSWER. First 40-60 words answer the exact question in the target keyword,
+   with a number in it. This is what gets quoted in an AI Overview and it is what stops the
+   reader going back to the results page. No throat-clearing, no "in today's market".
+
+2. PUT THE PRICE IN EARLY AND IN PUBLIC. Every competitor for these terms hides pricing behind
+   a contact form. Publishing a real range is the single highest-leverage thing on the page.
+   Use a table. Where you only have a range, say it is a range and say what moves it.
+
+3. HEADINGS ARE THE QUESTIONS PEOPLE TYPE. Use the target keywords as H2s where they read as
+   real questions. Never stack keywords into a heading that a human would not say aloud.
+
+4. QUOTE THE REGULATION VERBATIM. Where the research pack contains a rule, quote it with its
+   article number and authority. Do not paraphrase law.
+
+5. EVERY NUMBER TRACES TO THE PACK. If a figure is not in the research pack above, it does not
+   go on the page. If the pack says NOT FOUND for something the page needs, write
+   "[NEEDS SOURCE]" inline and continue. Do not estimate.
+
+6. ONE CROSS-SELL, PLACED LATE. Near the end, one sentence linking to /property-valuation-dubai/
+   phrased as the question this reader is already asking. Examples of the register:
+   "If you are weighing whether to re-let or sell, a current valuation is the first number you
+   need." Never a banner, never a hard sell, never more than one.
+
+=== HARD PROHIBITIONS ===
+- NEVER list a specific property with a price, a unit number or an address. Dubai requires a
+  Trakheesi permit plus BRN and ORN on any property advertisement; fines start at AED 50,000.
+  This page publishes advice, data and tools - it is not a property advertisement, and it must
+  stay that way.
+- NEVER promise or project a return, a yield or price appreciation. Not "expect 8%",
+  not "prices are set to rise". The market cooled in 2026; H1 residential transactions fell
+  13.6%. Publishing an appreciation promise is both a compliance problem and wrong.
+- NEVER claim to be the cheapest, the best or number one.
+- NEVER invent a company name, a phone number, a fee or an opening hour.
+- Do not reuse a sentence from any other page on this site.
+
+=== OUTPUT ===
+Markdown. One H1 matching the title intent. H2s as above. Tables as real markdown tables.
+End with a "Last reviewed" line carrying today's date. Then, after a line containing only
+`---SCHEMA---`, output the FAQPage JSON-LD for the questions this page answers, with answer
+text copied verbatim from the page body.

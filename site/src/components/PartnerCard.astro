@@ -1,0 +1,30 @@
+---
+// B5 — the licensed partner's name and ORN, attributed to them.
+//
+// 07-COMPLIANCE/who-is-the-advertiser.md is the file this component exists to satisfy.
+// Plainly holds no licence. The ORN shown here belongs to the partner, is labelled as
+// theirs, and the disclosure sentence is reproduced verbatim from that file.
+//
+// The disclosure "is not small print — it belongs in the body, where a reader sees it."
+import { SITE, disclosureLine, token } from '../lib/site.js';
+
+const partnerName = token(SITE.partner.name, 'PARTNER NAME');
+const partnerOrn = token(SITE.partner.orn, 'PARTNER ORN');
+const pendingName = SITE.partner.name === null;
+const pendingOrn = SITE.partner.orn === null;
+---
+
+<aside class="partner-card">
+  <h3>Who carries out the valuation</h3>
+  <p>
+    The valuation itself is produced by <strong
+      class={pendingName ? 'pending' : undefined}>{partnerName}</strong
+    >, a brokerage registered with the Dubai Land Department under ORN <strong
+      class={pendingOrn ? 'pending' : undefined}>{partnerOrn}</strong
+    >. That registration is theirs, not Plainly's. You can check it on the
+    <a href={SITE.partner.registerUrl} rel="nofollow noopener" target="_blank">
+      Dubai Land Department register</a
+    >.
+  </p>
+  <p class="disclosure">{disclosureLine()}</p>
+</aside>

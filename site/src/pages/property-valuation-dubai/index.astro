@@ -1,0 +1,209 @@
+---
+// Page 01 — /property-valuation-dubai/ · TILL · Template A
+// Blocks in spec order: B1 answer · B2 tool · B3 deliverables · B4 methods table
+//                       · B5 partner card · B6 FAQ · B7 form
+//
+// This page IS the destination, so it carries no cross-link to itself. It links down to
+// its two children instead.
+import PageShell from '../../layouts/PageShell.astro';
+import ValuationTool from '../../components/ValuationTool.astro';
+import DataTable from '../../components/DataTable.astro';
+import PartnerCard from '../../components/PartnerCard.astro';
+import FaqList from '../../components/FaqList.astro';
+import RequestForm from '../../components/RequestForm.astro';
+import NeedsSource from '../../components/NeedsSource.astro';
+import { byPath } from '../../lib/pages.js';
+
+const page = byPath('/property-valuation-dubai/');
+
+const answer =
+  'A written valuation of a Dubai property is produced from transactions the Dubai Land ' +
+  'Department has recorded in your own building, and is returned within 24 hours. Three ' +
+  'methods are used: comparable sales, the income approach, and a DLD-certified valuation, ' +
+  'which is the one the golden visa route requires at AED 2 million.';
+
+const faqs = [
+  {
+    q: 'How much does a property valuation cost in Dubai?',
+    a:
+      'The written report offered on this page is free. A DLD-certified valuation, which is ' +
+      'the separate document the golden visa and most court and bank processes require, ' +
+      'carries a fee set by the Dubai Land Department and is paid to them rather than to a ' +
+      'broker.',
+  },
+  {
+    q: 'How long does a Dubai property valuation take?',
+    a:
+      'The written report on this page is returned within 24 hours of the request, because ' +
+      'it is produced from transaction records rather than a site visit. A DLD-certified ' +
+      'valuation takes longer, as it involves an inspection and the Land Department issuing ' +
+      'the certificate.',
+  },
+  {
+    q: 'Is an online valuation accurate enough to price a sale?',
+    a:
+      'An indicative range from recorded transactions tells you the band your unit sits in. ' +
+      'It cannot see your floor, your view, your finish or your service charge, and those ' +
+      'move the number materially. Use the range to decide whether to go further, and a ' +
+      'written valuation to set an asking price.',
+  },
+  {
+    q: 'Do I need a valuation to sell a property in Dubai?',
+    a:
+      'No rule requires one before listing. It changes what you accept, though: an owner ' +
+      'who knows what the last four comparable units in the building actually transacted ' +
+      'at negotiates from evidence rather than from an agent’s opinion.',
+  },
+  {
+    q: 'Does Plainly carry out the valuation itself?',
+    a:
+      'No. Plainly is an information service and is not a licensed property brokerage. The ' +
+      'valuation is produced by a RERA-licensed partner brokerage, named on this page with ' +
+      'their own registration number.',
+  },
+  {
+    q: 'What does the Dubai Land Department transaction record actually show?',
+    a:
+      'It shows the price a property legally transferred at, along with the building, the ' +
+      'size and the date. It is the record of what was paid, which is why a valuation built ' +
+      'on it differs from one built on asking prices.',
+  },
+];
+---
+
+<PageShell page={page} h1="Dubai property valuation" answer={answer} faqs={faqs}>
+  <ValuationTool />
+
+  <h2>What does the written report contain?</h2>
+
+  <p>
+    Six things, each of which you can check yourself afterwards. A valuation you cannot audit
+    is an opinion with a letterhead on it.
+  </p>
+
+  <ul class="two-col">
+    <li>Comparable transactions from the last six months in your building, with dates</li>
+    <li>The price per square foot those transactions imply, and your unit measured against it</li>
+    <li>An adjustment for floor, aspect and finish, stated as an amount rather than a feeling</li>
+    <li>The current service charge per square foot and what it does to a buyer’s offer</li>
+    <li>A realistic asking price and a realistic acceptance price, which are not the same number</li>
+    <li>The evidence list, so every figure above can be traced back to a recorded transaction</li>
+  </ul>
+
+  <p>
+    What it does not contain is a projection. Nobody publishing honestly can tell you what your
+    property will be worth next year, and this market gives a specific reason not to try: H1
+    2026 residential transactions in Dubai fell 13.6% year on year, and Q2 2026 saw both prices
+    and rents decline. A valuation describes today, from records. That is the only claim it can
+    support.
+  </p>
+
+  <h2>How is a Dubai property valuation produced?</h2>
+
+  <p>
+    Three methods, and the one you need depends entirely on who is going to read the result.
+    Most owners asking what their property is worth need the first. Anyone applying for a
+    golden visa, settling an estate or arguing with a bank needs the third, and the first two
+    will not be accepted in its place.
+  </p>
+
+  <DataTable
+    caption="The three valuation methods used in Dubai"
+    columns={['Method', 'What it uses', 'When it applies', 'Typical cost']}
+    rows={[
+      [
+        'Comparable sales',
+        'Recorded transactions for similar units in the same building or community',
+        'Deciding an asking price, or checking an offer against evidence',
+        'Free as offered here',
+      ],
+      [
+        'Income approach',
+        'Achieved rent, occupancy and running costs, capitalised to a value',
+        'A tenanted unit, or a short-let where the return is the point',
+        'Varies by provider',
+      ],
+      [
+        'DLD-certified valuation',
+        'An inspection plus Land Department data, issued as a certificate',
+        'Golden visa, mortgage, court, inheritance — anywhere an authority must accept it',
+        'Fee set by the Dubai Land Department',
+      ],
+    ]}
+  />
+
+  <p>
+    The costs above are stated as they are known. The DLD certification fee and current
+    turnaround are published by the Land Department and belong in this table as figures:{' '}
+    <NeedsSource what="DLD valuation certificate fee and stated turnaround" />
+  </p>
+
+  <p>
+    The distinction that catches people is that a broker’s valuation and a certified valuation
+    are different documents with different legal weight. A broker’s valuation is a commercial
+    opinion, however well evidenced. A DLD-certified valuation is issued through the Land
+    Department and is the one an authority will act on. If someone offers you a “certified”
+    valuation without the Land Department involved, that is not what the word means here.
+  </p>
+
+  <p>
+    How each method is carried out, step by step, is set out in{' '}
+    <a href="/property-valuation-dubai/how-it-works/">how Dubai property valuation works</a>.
+  </p>
+
+  <h2>Who carries out the valuation?</h2>
+
+  <PartnerCard />
+
+  <p>
+    This matters more than a disclosure paragraph usually does. Valuing a property for a
+    transaction is a licensed activity in Dubai. Plainly explains how valuation works, what it
+    costs and what the methods are, which is information and requires no licence. The valuation
+    itself is performed by the licensed partner above, and the registration number shown is
+    theirs.
+  </p>
+
+  <h2>When do you need a DLD-certified valuation?</h2>
+
+  <p>
+    For the golden visa, the property must be valued at AED 2 million or more, and the
+    valuation has to be DLD-certified. An estate agent’s appraisal will not be accepted, and
+    neither will the price you paid. The threshold applies to the certified valuation figure,
+    which is why owners close to the line get the certificate before making any other
+    arrangements.
+  </p>
+
+  <p>
+    What counts toward the AED 2 million, what does not, and how the certificate is issued are
+    covered in full on{' '}
+    <a href="/property-valuation-dubai/golden-visa/">golden visa property valuation in Dubai</a>.
+  </p>
+
+  <h2>What moves a Dubai valuation most?</h2>
+
+  <p>
+    Floor level and aspect, first. Two identical layouts in the same tower can transact well
+    apart on view alone, and the transaction record shows it if you read unit by unit rather
+    than taking a building average.
+  </p>
+
+  <p>
+    Service charge, second, and it is the one owners consistently underweight. A buyer prices
+    the annual service charge into what they will pay, so a high charge per square foot depresses
+    the achievable price even where the unit itself is identical to a cheaper-to-run comparable
+    down the road. Published service charge figures per community belong here as evidence:{' '}
+    <NeedsSource what="service charge per sq ft by community, from the DLD service charge index" />
+  </p>
+
+  <p>
+    Third, condition at handover. A unit that went through snagging and had its defects fixed
+    inside the developer’s liability window presents differently to one that did not, and the
+    difference is visible to a buyer.{' '}
+    <a href="/snagging-dubai/">Snagging in Dubai</a> covers what that inspection costs and what
+    it catches.
+  </p>
+
+  <FaqList faqs={faqs} />
+
+  <RequestForm />
+</PageShell>

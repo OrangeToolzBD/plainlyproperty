@@ -1,0 +1,30 @@
+---
+// The common opening of all three templates in 04-DESIGN/02-page-templates.md:
+// H1, then B1 the answer block, then the page's own blocks.
+//
+// The templates differ only in which blocks follow, so rather than three near-identical
+// layouts each page composes its blocks in the order its spec gives. That keeps the block
+// sequence visible in the page file, where it can be checked against 03-PAGE-SPECS
+// line by line.
+//
+//   Template A (TILL)    B1 answer · B2 tool · B3 deliverables · B4 methods table
+//                        · B5 partner card · B6 FAQ · B7 form
+//   Template B (DOOR)    B1 answer · B2 number table · B3 what it covers · B4 the rule
+//                        · B5 what people get wrong · B6 FAQ · B7 cross-link
+//   Template C (SUPPORT) as B, minus B5, with B2 as a comparison table
+import BaseLayout from './BaseLayout.astro';
+import AnswerBlock from '../components/AnswerBlock.astro';
+
+const { page, h1, answer, faqs = [] } = Astro.props;
+---
+
+<BaseLayout page={page} answer={answer} faqs={faqs}>
+  {/* data-content-page marks the thirteen spec'd pages plus the homepage. The build gate
+      applies the on-page standard and the one-cross-link rule only to these, so the privacy,
+      contact, thank-you and 404 pages are not judged against a spec they were never in. */}
+  <article class="prose" data-content-page>
+    <h1>{h1}</h1>
+    <AnswerBlock text={answer} />
+    <slot />
+  </article>
+</BaseLayout>

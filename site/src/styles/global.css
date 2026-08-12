@@ -1,0 +1,520 @@
+/* Design system — 04-DESIGN/01-design-system.md, tokens copied verbatim.
+   "The design job here is credibility, not decoration." */
+
+:root {
+  /* ink */
+  --ink: #0d1b2a;
+  --ink-2: #33475b;
+  --muted: #61748c;
+
+  /* surface */
+  --bg: #ffffff;
+  --bg-2: #f5f8fc;
+  --bg-3: #eaf1fa;
+  --line: #dfe6ef;
+
+  /* brand — replace the blue with the client's, keep the contrast ratios */
+  --brand: #0b5fd0;
+  --brand-2: #e7f0fd;
+
+  /* semantic */
+  --ok: #0f7a55;
+  --ok-bg: #e3f6ee;
+  --warn: #a8620a;
+  --warn-bg: #fdf1de;
+  --bad: #b8202e;
+  --bad-bg: #fdeaec;
+
+  --radius: 14px;
+  --maxw: 1100px;
+  --prose: 68ch;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  /* No @font-face anywhere. A webfont costs LCP and buys nothing here. */
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial,
+    sans-serif;
+  font-size: 17px;
+  line-height: 1.72;
+}
+
+/* ---- Type scale ---------------------------------------------------------- */
+
+h1,
+h2,
+h3 {
+  color: var(--ink);
+  margin: 0 0 0.5em;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: 44px;
+  line-height: 1.1;
+  letter-spacing: -0.028em;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 750;
+  margin-top: 2.2em;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 1.35;
+  font-weight: 700;
+  margin-top: 1.8em;
+}
+
+p,
+li {
+  color: var(--ink-2);
+}
+
+a {
+  color: var(--brand);
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  background: var(--brand-2);
+}
+
+strong {
+  color: var(--ink);
+  font-weight: 650;
+}
+
+/* ---- Layout -------------------------------------------------------------- */
+
+.wrap {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Non-negotiable 1: prose never exceeds 68 characters per line. */
+.prose > * {
+  max-width: var(--prose);
+}
+
+.prose > table,
+.prose > .table-scroll,
+.prose > .wide {
+  max-width: 100%;
+}
+
+/* ---- Header / footer ----------------------------------------------------- */
+
+.site-header {
+  border-bottom: 1px solid var(--line);
+  background: var(--bg);
+}
+
+.site-header .wrap {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  min-height: 68px;
+}
+
+.brand {
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.brand:hover {
+  background: none;
+}
+
+.site-nav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-size: 15.5px;
+  margin-inline-start: auto;
+}
+
+.site-nav a {
+  color: var(--ink-2);
+  text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current='page'] {
+  color: var(--brand);
+}
+
+.header-phone {
+  font-weight: 650;
+  white-space: nowrap;
+}
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  background: var(--bg-2);
+  margin-top: 72px;
+  padding: 32px 0 48px;
+  font-size: 15px;
+}
+
+.site-footer .cols {
+  display: grid;
+  gap: 28px;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+}
+
+.site-footer h2 {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+.site-footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-footer li {
+  margin-bottom: 6px;
+}
+
+.licence-line {
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  color: var(--ink-2);
+  max-width: var(--prose);
+}
+
+/* ---- Breadcrumbs --------------------------------------------------------- */
+
+.breadcrumbs {
+  font-size: 14px;
+  color: var(--muted);
+  padding: 18px 0 0;
+}
+
+.breadcrumbs ol {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs li + li::before {
+  content: '/';
+  margin-right: 8px;
+  color: var(--line);
+}
+
+/* ---- Answer block -------------------------------------------------------- */
+
+.answer {
+  font-size: 19px;
+  line-height: 1.65;
+  color: var(--ink);
+  background: var(--bg-2);
+  border-left: 3px solid var(--brand);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 20px 24px;
+  margin: 0 0 32px;
+}
+
+.answer p {
+  color: var(--ink);
+  margin: 0;
+}
+
+/* ---- Tables -------------------------------------------------------------- */
+
+/* Non-negotiable 4: real <table> elements. They get reproduced near-verbatim
+   inside AI answers; a table built from divs is invisible to that. */
+.table-scroll {
+  overflow-x: auto;
+  margin: 24px 0 8px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+caption {
+  text-align: left;
+  font-size: 15px;
+  font-weight: 650;
+  color: var(--ink);
+  padding: 14px 16px 0;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 11px 16px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+
+thead th {
+  background: var(--bg-3);
+  color: var(--ink);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+tbody tr:nth-child(even) {
+  background: var(--bg-2);
+}
+
+tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+/* ---- Source line --------------------------------------------------------- */
+
+.source-line {
+  font-size: 13.5px;
+  color: var(--muted);
+  margin: 0 0 28px;
+}
+
+/* ---- Rule quote ---------------------------------------------------------- */
+
+blockquote.rule {
+  margin: 28px 0;
+  padding: 18px 22px;
+  background: var(--bg-2);
+  border-left: 3px solid var(--ink-2);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+blockquote.rule p {
+  margin: 0;
+  color: var(--ink);
+}
+
+blockquote.rule cite {
+  display: block;
+  margin-top: 10px;
+  font-size: 13.5px;
+  font-style: normal;
+  color: var(--muted);
+}
+
+/* ---- Partner card -------------------------------------------------------- */
+
+.partner-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  background: var(--bg-2);
+  margin: 28px 0;
+}
+
+.partner-card h3 {
+  margin-top: 0;
+}
+
+.partner-card .disclosure {
+  color: var(--ink);
+  margin-bottom: 0;
+}
+
+/* ---- FAQ ----------------------------------------------------------------- */
+
+/* Rendered open by default. An accordion that injects content on click hides it
+   from crawlers that do not run JavaScript. */
+.faq details {
+  border-bottom: 1px solid var(--line);
+  padding: 14px 0;
+}
+
+.faq summary {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--ink);
+  cursor: pointer;
+  list-style: none;
+}
+
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq summary::before {
+  content: '–';
+  margin-right: 10px;
+  color: var(--brand);
+}
+
+.faq details:not([open]) summary::before {
+  content: '+';
+}
+
+.faq details > *:not(summary) {
+  margin-bottom: 0;
+}
+
+/* ---- Cross-link ---------------------------------------------------------- */
+
+/* One sentence, inline, never a banner. */
+.cross-link {
+  margin: 32px 0;
+}
+
+/* ---- Pending-value marker ------------------------------------------------ */
+
+/* Renders loudly in staging. scripts/gate.mjs fails the production build on it. */
+.pending {
+  background: var(--bad-bg);
+  color: var(--bad);
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+/* ---- Cards / lists ------------------------------------------------------- */
+
+.two-col {
+  display: grid;
+  gap: 4px 32px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  max-width: 100%;
+}
+
+.meta-line {
+  font-size: 13.5px;
+  color: var(--muted);
+  margin-top: 48px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
+/* ---- Forms --------------------------------------------------------------- */
+
+.field {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  font-size: 15px;
+  font-weight: 650;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+
+input,
+select {
+  width: 100%;
+  max-width: 420px;
+  font: inherit;
+  font-size: 16px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+input:focus-visible,
+select:focus-visible,
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+
+button {
+  font: inherit;
+  font-weight: 650;
+  font-size: 16px;
+  padding: 11px 22px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--brand);
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(1.08);
+}
+
+.hint {
+  font-size: 13.5px;
+  color: var(--muted);
+  margin-top: 6px;
+}
+
+/* ---- Skip link ----------------------------------------------------------- */
+
+.skip {
+  position: absolute;
+  left: -9999px;
+}
+
+.skip:focus {
+  left: 8px;
+  top: 8px;
+  z-index: 10;
+  background: var(--bg);
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 2px solid var(--brand);
+}
+
+/* ---- Responsive ---------------------------------------------------------- */
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  .answer {
+    font-size: 18px;
+  }
+
+  .site-nav {
+    margin-inline-start: 0;
+    width: 100%;
+    padding-bottom: 12px;
+  }
+}

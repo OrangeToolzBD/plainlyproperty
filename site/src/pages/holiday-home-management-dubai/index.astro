@@ -1,0 +1,185 @@
+---
+// Page 09 — /holiday-home-management-dubai/ · DOOR · Template B
+// Format per spec: fee comparison table + break-even calculator.
+import PageShell from '../../layouts/PageShell.astro';
+import DataTable from '../../components/DataTable.astro';
+import FaqList from '../../components/FaqList.astro';
+import ValuationCrossLink from '../../components/ValuationCrossLink.astro';
+import NeedsSource from '../../components/NeedsSource.astro';
+import { byPath } from '../../lib/pages.js';
+
+const page = byPath('/holiday-home-management-dubai/');
+
+const answer =
+  'Holiday home operators in Dubai charge 15–25% of gross booking revenue. That fee covers ' +
+  'listing, pricing, guest handling and cleaning coordination, but not the DET permit, the ' +
+  'tourism dirham or the furnishing. Short-let grosses more than a long-term tenancy and nets ' +
+  'less once those costs come out.';
+
+const faqs = [
+  {
+    q: 'How much do holiday home operators charge in Dubai?',
+    a:
+      '15–25% of gross booking revenue. The spread reflects what is bundled: a 15% fee ' +
+      'usually excludes linen, cleaning and guest supplies, while a 25% fee usually includes ' +
+      'them. Compare on what you pay in total, not on the headline percentage.',
+  },
+  {
+    q: 'What does the management fee not cover?',
+    a:
+      'Typically the DET holiday home permit, the tourism dirham charged per occupied night, ' +
+      'utilities, internet, the initial furnishing and any maintenance. Those sit with the ' +
+      'owner regardless of the fee model.',
+  },
+  {
+    q: 'Do I need a permit to short-let my Dubai property?',
+    a:
+      'Yes. A holiday home permit issued by the Department of Economy and Tourism is required ' +
+      'before a unit is let on a short-term basis. Either you hold it, or a licensed operator ' +
+      'holds it on the unit’s behalf.',
+  },
+  {
+    q: 'Is short-letting more profitable than a long-term tenant?',
+    a:
+      'It grosses more and nets less, and which one wins depends on the occupancy actually ' +
+      'achieved rather than on the nightly rate advertised. A long-term Ejari tenancy has ' +
+      'lower revenue and near-zero variable cost; short-let has both higher.',
+  },
+  {
+    q: 'Who is responsible if a guest damages the property?',
+    a:
+      'That is a contract question and it varies materially between operators. Read what the ' +
+      'agreement says about damage deposits, insurance and who pursues a claim before signing ' +
+      '— it is the term that differs most between two otherwise similar offers.',
+  },
+];
+---
+
+<PageShell
+  page={page}
+  h1="Holiday home management in Dubai"
+  answer={answer}
+  faqs={faqs}
+>
+  <h2>What do operators charge, and for what?</h2>
+
+  <DataTable
+    caption="Holiday home management fee models in Dubai"
+    columns={['Model', 'Typical fee', 'Usually included', 'Usually excluded']}
+    rows={[
+      [
+        'Commission, lower band',
+        '15% of gross',
+        'Listing, pricing, guest communication, check-in',
+        'Linen, cleaning, consumables, maintenance',
+      ],
+      [
+        'Commission, upper band',
+        '25% of gross',
+        'The above plus cleaning coordination and consumables',
+        'Permit, tourism dirham, utilities, furnishing',
+      ],
+      [
+        'Fixed monthly payment',
+        '<span class="pending">[NEEDS SOURCE: published fixed-monthly-payment terms]</span>',
+        'A set monthly sum to the owner regardless of occupancy',
+        'Upside when occupancy is strong',
+      ],
+      [
+        'Fixed fee',
+        '<span class="pending">[NEEDS SOURCE: published fixed-fee rates]</span>',
+        'A flat monthly management charge',
+        'Everything variable',
+      ],
+    ]}
+    source="Published Dubai holiday home operator fee structures"
+  />
+
+  <p>
+    Only the commission band is filled, because it is the figure the market publishes. Named
+    operators’ own rate cards belong in the empty rows rather than a plausible number:{' '}
+    <NeedsSource what="published fee structures from named Dubai holiday home operators, including fixed-payment and fixed-fee terms" />
+  </p>
+
+  <h2>How do you compare two operators honestly?</h2>
+
+  <p>
+    Not on the percentage. A 15% fee that excludes cleaning, linen and consumables can cost
+    more per occupied night than a 25% fee that includes them, and the gap widens with turnover
+    — a unit doing many short stays pays for cleaning many times.
+  </p>
+
+  <p>Ask each operator for the same four numbers and compare those instead:</p>
+
+  <ol>
+    <li>The percentage, and precisely what it is a percentage <em>of</em> — gross booking value, or net of platform fees</li>
+    <li>The cleaning charge per turnover, and who pays it</li>
+    <li>What the owner is billed for separately in a normal month</li>
+    <li>The occupancy the operator is forecasting, and what that forecast is based on</li>
+  </ol>
+
+  <p>
+    Treat the fourth answer carefully. An occupancy forecast is a projection, and a projection
+    is not a fact about your unit. What can be checked is what comparable units in the same
+    building actually achieved.
+  </p>
+
+  <h2>What does the owner still pay for?</h2>
+
+  <ul class="two-col">
+    <li>The DET holiday home permit, per unit</li>
+    <li>Tourism dirham, charged per occupied night</li>
+    <li>Utilities, which the owner carries rather than the guest</li>
+    <li>Internet and any subscriptions</li>
+    <li>Initial furnishing to the standard the platform requires</li>
+    <li>Service charge, unchanged from any other ownership model</li>
+    <li>Maintenance and replacement, which runs faster under short-let use</li>
+  </ul>
+
+  <p>
+    The permit itself is the item people discover late. What it requires, what it costs and how
+    often it renews is on{' '}
+    <a href="/holiday-home-management-dubai/permit/">the Dubai holiday home permit page</a>.
+  </p>
+
+  <h2>Where is the break-even against a long-term tenant?</h2>
+
+  <p>
+    At the occupancy rate where short-let net equals long-let net. Above it, short-let wins;
+    below it, the Ejari tenancy does, and it does so with far less work. The mechanism is
+    straightforward — gross nightly revenue times occupancy, less the management fee, cleaning,
+    tourism dirham, utilities and vacancy — but the inputs are specific to the building and the
+    season.
+  </p>
+
+  <p>
+    The model is worked through in full, side by side against a standard tenancy, on{' '}
+    <a href="/holiday-home-management-dubai/short-let-vs-long-let/">
+      short-let versus long-term rental in Dubai
+    </a>.
+  </p>
+
+  <h2>What do people get wrong about short-letting?</h2>
+
+  <p>
+    They compare gross short-let revenue against net long-let revenue. It is not a comparison;
+    it is two different measurements. A unit grossing well on nightly rates can net below what a
+    tenant on an annual contract would have paid, once the fee, the cleaning, the permit, the
+    utilities and the empty nights are subtracted.
+  </p>
+
+  <p>
+    Note also what this page will not tell you: what yield to expect. H1 2026 residential
+    transactions fell 13.6% year on year and Q2 2026 saw both prices and rents decline. Anyone
+    projecting a return into that is guessing, and the projection is the part of the pitch that
+    should make you most careful.
+  </p>
+
+  <ValuationCrossLink
+    before="If the numbers push you toward selling rather than letting, "
+    anchor="start with what the unit is actually worth today"
+    after="."
+  />
+
+  <FaqList faqs={faqs} />
+</PageShell>

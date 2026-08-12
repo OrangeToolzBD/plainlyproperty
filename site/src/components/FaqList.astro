@@ -1,0 +1,23 @@
+---
+// B6 — FAQ. <details open>, so the content is in the DOM regardless of state.
+//
+// 04-DESIGN/02-page-templates.md:36 — "An accordion that injects content on click hides
+// it from crawlers that do not run JavaScript." There is no JavaScript here at all; the
+// open/closed toggle is native <details> behaviour.
+//
+// The same `faqs` array is passed to faqSchema(), so the JSON-LD answer text and the
+// visible answer text cannot drift apart.
+const { faqs, heading = 'Questions people ask' } = Astro.props;
+---
+
+<section class="faq">
+  <h2>{heading}</h2>
+  {
+    faqs.map((f) => (
+      <details open>
+        <summary>{f.q}</summary>
+        <p>{f.a}</p>
+      </details>
+    ))
+  }
+</section>

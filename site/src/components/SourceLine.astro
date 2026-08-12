@@ -1,0 +1,13 @@
+---
+// "Source: [authority], checked [date]" under every table.
+// 05-SEO-AEO-GEO/05-definition-of-done.md requires one beneath each table, and
+// 02-onpage-standard.md requires every figure attributed to a named authority with a date.
+import { SITE } from '../lib/site.js';
+
+const { source, checked = SITE.lastReviewed, href } = Astro.props;
+---
+
+<p class="source-line">
+  Source: {href ? <a href={href} rel="nofollow noopener" target="_blank">{source}</a> : source},
+  checked {checked}.
+</p>

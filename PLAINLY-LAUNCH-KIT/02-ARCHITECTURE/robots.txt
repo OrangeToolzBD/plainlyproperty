@@ -1,0 +1,36 @@
+# Allow the AI SEARCH bots. Blocking these removes the site from that engine's answers.
+# The TRAINING bots are a separate decision and do not affect search visibility.
+
+User-agent: *
+Allow: /
+Disallow: /thank-you/
+Disallow: /admin/
+Disallow: /*?*sort=
+Disallow: /*?*filter=
+
+# AI search crawlers - explicitly allowed
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: bingbot
+Allow: /
+
+# Optional: opt out of model TRAINING only. Uncommenting these does NOT remove you
+# from AI search results. Leave commented unless the client asks for it.
+# User-agent: GPTBot
+# Disallow: /
+# User-agent: ClaudeBot
+# Disallow: /
+# User-agent: Google-Extended
+# Disallow: /
+
+Sitemap: https://plainlyproperty.com/sitemap.xml

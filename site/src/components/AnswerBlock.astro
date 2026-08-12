@@ -1,0 +1,22 @@
+---
+// 04-DESIGN/02-page-templates.md — B1. 19px, 40–60 words, no image sibling above it.
+// This is the passage AI Overviews quote and the first thing a human reads, so it has to
+// stand alone when lifted out of context.
+//
+// The same text is passed to serviceSchema() as `description`, which is why it is a prop
+// rather than a slot: schema must match the visible text exactly, and a slot cannot be
+// read back to check that.
+const { text } = Astro.props;
+
+const words = text.trim().split(/\s+/).length;
+if (words < 40 || words > 60) {
+  console.warn(
+    `[answer-block] ${Astro.url.pathname} is ${words} words. The spec says 40–60. ` +
+      `scripts/gate.mjs will fail the production build on this.`,
+  );
+}
+---
+
+<div class="answer" data-answer-words={words}>
+  <p>{text}</p>
+</div>

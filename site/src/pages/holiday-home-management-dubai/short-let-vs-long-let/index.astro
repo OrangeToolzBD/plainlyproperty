@@ -1,0 +1,175 @@
+---
+// Page 10 — /holiday-home-management-dubai/short-let-vs-long-let/ · DOOR · Template B
+// Highest measured demand on the board: 3,950 searches/month.
+// Format per spec: side-by-side model + calculator. "Strongest cross-sell into valuation."
+import PageShell from '../../../layouts/PageShell.astro';
+import DataTable from '../../../components/DataTable.astro';
+import FaqList from '../../../components/FaqList.astro';
+import ValuationCrossLink from '../../../components/ValuationCrossLink.astro';
+import NeedsSource from '../../../components/NeedsSource.astro';
+import { byPath } from '../../../lib/pages.js';
+
+const page = byPath('/holiday-home-management-dubai/short-let-vs-long-let/');
+
+const answer =
+  'Short-let in Dubai grosses more than a long-term tenancy and nets less. Gross booking ' +
+  'revenue is reduced by the operator’s 15–25%, the DET permit, tourism dirham, cleaning, ' +
+  'utilities and vacant nights, all of which a long-term Ejari tenancy avoids. Occupancy is ' +
+  'what decides which comes out ahead.';
+
+const faqs = [
+  {
+    q: 'Is short-let or long-term rental better in Dubai?',
+    a:
+      'Neither, in the abstract. Short-let produces higher gross revenue and carries costs a ' +
+      'long-term tenancy does not: 15–25% management, cleaning per turnover, the DET permit, ' +
+      'tourism dirham, utilities and vacant nights. The answer turns on the occupancy your ' +
+      'specific unit achieves.',
+  },
+  {
+    q: 'What occupancy does short-let need to beat a long-term tenant?',
+    a:
+      'The break-even occupancy is the point where nightly revenue, after the management fee ' +
+      'and per-stay costs, equals what a tenant would pay annually. It is specific to the ' +
+      'building and the nightly rate achieved, which is why this page shows the calculation ' +
+      'rather than a single number.',
+  },
+  {
+    q: 'What costs does a long-term tenancy avoid entirely?',
+    a:
+      'Cleaning between stays, the tourism dirham, guest supplies, the DET holiday home ' +
+      'permit, listing platform fees, and the utilities a short-let owner carries because the ' +
+      'guest does not. A tenant pays their own utilities and stays put.',
+  },
+  {
+    q: 'Can I switch between short-let and long-term letting?',
+    a:
+      'Yes, and the constraint is regulatory rather than practical: short-letting requires a ' +
+      'DET holiday home permit and letting on an annual contract requires Ejari registration. ' +
+      'Switching means moving between those two regimes properly, not just changing how you ' +
+      'advertise.',
+  },
+  {
+    q: 'Does short-letting damage the property faster?',
+    a:
+      'More turnover means more wear on soft furnishings, linen and appliances, and a ' +
+      'replacement cycle measured in months rather than years. Budget for replacement as an ' +
+      'operating cost rather than treating it as an occasional surprise.',
+  },
+];
+---
+
+<PageShell
+  page={page}
+  h1="Short-let versus long-term rental in Dubai"
+  answer={answer}
+  faqs={faqs}
+>
+  <h2>What actually differs between the two?</h2>
+
+  <DataTable
+    caption="Short-let and long-term tenancy compared, line by line"
+    columns={['Line', 'Short-let', 'Long-term tenancy']}
+    rows={[
+      ['Revenue basis', 'Nightly rate × occupied nights', 'Annual contract, fixed'],
+      ['Management fee', '15–25% of gross booking revenue', 'Letting or management fee, if used'],
+      ['Cleaning', 'Charged per turnover', 'None during the tenancy'],
+      ['Regulatory requirement', 'DET holiday home permit, per unit', 'Ejari registration of the contract'],
+      ['Tourism dirham', 'Charged per occupied night', 'Not applicable'],
+      ['Utilities', 'Owner carries them', 'Tenant carries them'],
+      ['Furnishing', 'Required, to platform standard', 'Optional'],
+      ['Vacancy risk', 'Every unbooked night', 'Between tenancies only'],
+      ['Wear and replacement', 'Accelerated by turnover', 'Slower'],
+      ['Owner time', 'Ongoing, even with an operator', 'Minimal'],
+    ]}
+    source="Cost structure of the two letting models in Dubai"
+  />
+
+  <h2>How does the calculation work?</h2>
+
+  <p>
+    Both sides reduce to one number: what reaches the owner’s account over a year. The
+    arithmetic is not complicated, and it is worth doing on paper before signing anything.
+  </p>
+
+  <p><strong>Short-let, annual net:</strong></p>
+
+  <ol>
+    <li>Nightly rate × 365 × occupancy = gross booking revenue</li>
+    <li>Less the management fee, at 15–25% of that gross</li>
+    <li>Less cleaning, at the per-turnover charge × the number of stays</li>
+    <li>Less the tourism dirham, per occupied night</li>
+    <li>Less utilities, internet and consumables for the full year</li>
+    <li>Less the DET permit, apportioned over its validity period</li>
+    <li>Less replacement of linen, furnishing and appliances</li>
+  </ol>
+
+  <p><strong>Long-term tenancy, annual net:</strong></p>
+
+  <ol>
+    <li>Annual rent agreed in the contract</li>
+    <li>Less any letting or management fee</li>
+    <li>Less Ejari registration</li>
+    <li>Less maintenance</li>
+  </ol>
+
+  <p>
+    Both then have the service charge deducted, which is identical under either model and is
+    therefore not what decides between them.
+  </p>
+
+  <h2>What are the real numbers?</h2>
+
+  <p>
+    The structure above is the mechanism; the inputs are what turn it into an answer, and they
+    are specific and published rather than estimable. This page does not ship with invented
+    figures in place of them:{' '}
+    <NeedsSource what="Dubai short-let occupancy rates by community, tourism dirham per night by category, DET permit fee, typical cleaning charge per turnover, and comparable long-let rents" />
+  </p>
+
+  <p>
+    What can be said now is which way each input pushes. Occupancy is the dominant term:
+    everything else is roughly linear, but a unit at low occupancy pays its fixed costs out of
+    a much smaller gross. That is why two identical apartments in the same tower can land on
+    opposite sides of this decision.
+  </p>
+
+  <h2>What does the tourism dirham change?</h2>
+
+  <p>
+    It is charged per occupied night, so it scales with the thing you are trying to maximise.
+    High occupancy raises the tourism dirham bill in step with revenue, which does not change
+    the ranking but does flatten the advantage. The current rates by property category are set
+    by the Department of Economy and Tourism and belong here as figures, above.
+  </p>
+
+  <h2>What do people get wrong?</h2>
+
+  <p>
+    Three things, consistently. They compare short-let <em>gross</em> against long-let
+    <em>net</em>. They use a peak-season nightly rate as though it applied year-round. And they
+    forget that a long-term tenancy takes almost none of their attention, which has a value
+    even if it does not appear on either side of the calculation.
+  </p>
+
+  <p>
+    A fourth, worth stating plainly: nobody should be projecting a return to you here. H1 2026
+    residential transactions fell 13.6% year on year, and Q2 2026 saw both prices and rents
+    decline. An operator forecasting a yield into that market is selling, not advising.
+  </p>
+
+  <p>
+    What operators charge and what the fee does and does not cover is on{' '}
+    <a href="/holiday-home-management-dubai/">holiday home management in Dubai</a>, and the
+    permit you cannot legally short-let without is on{' '}
+    <a href="/holiday-home-management-dubai/permit/">the DET holiday home permit page</a>.
+  </p>
+
+  <ValuationCrossLink
+    before="If the numbers push you toward selling rather than letting, "
+    anchor="start with what the unit is actually worth today"
+    after="."
+  />
+
+  <FaqList faqs={faqs} />
+</PageShell>

@@ -1,0 +1,33 @@
+---
+// A real <table>. 04-DESIGN/01-design-system.md non-negotiable 4: these get reproduced
+// near-verbatim inside AI answers, and a table built from divs is invisible to that.
+//
+// Scrolls inside its own container so a wide table never makes the page scroll sideways.
+import SourceLine from './SourceLine.astro';
+
+const { caption, columns, rows, source, checked } = Astro.props;
+---
+
+<div class="table-scroll">
+  <table>
+    {caption && <caption>{caption}</caption>}
+    <thead>
+      <tr>
+        {columns.map((c) => <th scope="col">{c}</th>)}
+      </tr>
+    </thead>
+    <tbody>
+      {
+        rows.map((row) => (
+          <tr>
+            {row.map((cell, i) =>
+              i === 0 ? <th scope="row" set:html={cell} /> : <td set:html={cell} />,
+            )}
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+</div>
+
+{source && <SourceLine source={source} checked={checked} />}

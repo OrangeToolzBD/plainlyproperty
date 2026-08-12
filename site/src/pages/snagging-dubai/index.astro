@@ -1,0 +1,177 @@
+---
+// Page 04 — /snagging-dubai/ · DOOR · Template B
+// Blocks: B1 answer · B2 number table · B3 what it covers · B4 the rule
+//         · B5 what people get wrong · B6 FAQ · B7 cross-link
+//
+// Lowest competitor barrier on the board (median 79 referring domains) and the highest
+// click prices. The price in the answer block is the reason this page wins the click:
+// every competitor for these terms hides pricing behind a contact form.
+import PageShell from '../../layouts/PageShell.astro';
+import DataTable from '../../components/DataTable.astro';
+import FaqList from '../../components/FaqList.astro';
+import ValuationCrossLink from '../../components/ValuationCrossLink.astro';
+import NeedsSource from '../../components/NeedsSource.astro';
+import { byPath } from '../../lib/pages.js';
+
+const page = byPath('/snagging-dubai/');
+
+const answer =
+  'Snagging in Dubai costs AED 666–999 for a typical apartment. It is a defect survey ' +
+  'carried out before you accept handover. The developer carries a one-year liability for ' +
+  'defects and ten years on structure, so what the report finds is fixed at their cost ' +
+  'rather than yours, provided you claim in time.';
+
+const faqs = [
+  {
+    q: 'How much does snagging cost in Dubai?',
+    a:
+      'AED 666–999 for a typical apartment. Villas cost more because they are larger and have ' +
+      'more systems to test. Re-inspection after the developer has done the work is usually ' +
+      'charged separately, and that second visit is the one people forget to budget for.',
+  },
+  {
+    q: 'Is snagging worth it if the property looks finished?',
+    a:
+      'A snagging survey is looking for what you cannot see on a walkthrough: falls on ' +
+      'balcony drainage, chilled water performance, socket polarity, waterproofing behind ' +
+      'tiling. A unit that photographs well can still carry defects that cost more than the ' +
+      'inspection once the liability window has closed.',
+  },
+  {
+    q: 'When should the snagging inspection happen?',
+    a:
+      'Before you sign for handover, while refusing to accept still has leverage attached to ' +
+      'it. Once you have accepted the unit and the developer’s one-year defect liability ' +
+      'starts running down, you are claiming rather than negotiating.',
+  },
+  {
+    q: 'Who fixes the defects the report finds?',
+    a:
+      'The developer, at their cost, within the defect liability period. The report is what ' +
+      'turns a disagreement about whether something is wrong into a documented list with ' +
+      'photographs and locations.',
+  },
+  {
+    q: 'Does the developer have to accept an independent snagging report?',
+    a:
+      'Developers routinely work from independent reports, and a report with photographs, ' +
+      'unit locations and dates is harder to dispute than a verbal complaint. What obliges ' +
+      'them is the defect liability in the contract and the Civil Code, not the report itself.',
+  },
+  {
+    q: 'Can I do the snagging myself?',
+    a:
+      'You can walk the unit and list what you see, and you should. What you cannot do ' +
+      'without instruments is test water pressure, thermal imaging for leaks, electrical ' +
+      'polarity or air-conditioning output — which is where the expensive defects hide.',
+  },
+];
+---
+
+<PageShell page={page} h1="Snagging in Dubai: what it costs and what it catches" answer={answer} faqs={faqs}>
+  <h2>What does snagging cost in Dubai?</h2>
+
+  <DataTable
+    caption="Published snagging prices in Dubai by unit type"
+    columns={['Unit', 'Price', 'Notes']}
+    rows={[
+      [
+        'Typical apartment',
+        'AED 666–999',
+        'The range most published Dubai rate cards fall inside',
+      ],
+      [
+        'Studio',
+        '<span class="pending">[NEEDS SOURCE: published studio rate]</span>',
+        'Usually below the apartment rate',
+      ],
+      [
+        'Villa or townhouse',
+        '<span class="pending">[NEEDS SOURCE: published villa rate by bedroom count]</span>',
+        'Priced by size and system count',
+      ],
+      [
+        'Re-inspection',
+        '<span class="pending">[NEEDS SOURCE: published re-inspection fee]</span>',
+        'Charged separately by most firms, and rarely advertised',
+      ],
+    ]}
+    source="Published Dubai snagging rate cards"
+  />
+
+  <p>
+    The full breakdown by unit size, including the re-inspection fee most firms do not put on
+    their website, is on <a href="/snagging-dubai/cost/">snagging costs in Dubai</a>.
+  </p>
+
+  <p>
+    Against a property worth AED 1.3–3.5 million, the inspection is a rounding error. That is
+    not an argument for buying one — it is an argument for not choosing an inspector on price.
+    The number that matters is what the survey finds and whether the report is detailed enough
+    to make the developer act on it.
+  </p>
+
+  <h2>What does a snagging inspection actually cover?</h2>
+
+  <p>
+    A survey worth paying for is instrumented, not visual. The categories below are what
+    separates an inspection from a careful walkthrough.
+  </p>
+
+  <ul class="two-col">
+    <li>Mechanical, electrical and plumbing, tested rather than looked at</li>
+    <li>Air-conditioning output measured at each outlet</li>
+    <li>Water pressure and drainage falls, including balconies and wet areas</li>
+    <li>Thermal imaging for concealed leaks and insulation gaps</li>
+    <li>Electrical socket polarity, earthing and distribution board labelling</li>
+    <li>Joinery, alignment, and door and window operation under load</li>
+    <li>Waterproofing in bathrooms, kitchens and terraces</li>
+    <li>Glazing, sealant lines and external finishes</li>
+  </ul>
+
+  <p>
+    The complete room-by-room list is set out on{' '}
+    <a href="/snagging-dubai/checklist/">the Dubai snagging checklist</a>, which runs to 180
+    points and is free to download.
+  </p>
+
+  <h2>What is the developer obliged to fix?</h2>
+
+  <p>
+    Defects for one year and structural failure for ten, under the liability a developer
+    carries in the UAE. The one-year window is the one that expires while people are still
+    unpacking. The governing text belongs on this page quoted verbatim with its article number
+    rather than summarised:{' '}
+    <NeedsSource what="UAE Civil Code articles on decennial liability and defect liability, verbatim with article numbers" />
+  </p>
+
+  <p>
+    What that window means in practice, and what happens if you miss it, is covered on{' '}
+    <a href="/snagging-dubai/developer-defect-liability/">developer defect liability in Dubai</a>.
+  </p>
+
+  <h2>What do people get wrong about snagging?</h2>
+
+  <p>
+    They treat the report as the end of the process. It is the beginning. The sequence that
+    actually works is: inspect before accepting handover, issue the report to the developer,
+    let them complete the work, then <em>re-inspect</em> and only then accept. The re-inspection
+    is where the value is, because the first round of fixes is frequently partial and nobody
+    checks.
+  </p>
+
+  <p>
+    The second common error is sequencing snagging after utility activation and move-in. Once
+    you have accepted the unit, taken the keys and started living in it, the argument about
+    whether a defect was there at handover becomes yours to prove. The full order of
+    operations is on <a href="/handover-dubai/">the Dubai handover checklist</a>.
+  </p>
+
+  <ValuationCrossLink
+    before="If the snag list comes back worse than you expected and you are reconsidering the purchase altogether, "
+    anchor="a current valuation of the unit"
+    after=" is the first number worth having before you decide anything else."
+  />
+
+  <FaqList faqs={faqs} />
+</PageShell>

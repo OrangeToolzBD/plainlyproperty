@@ -1,0 +1,1073 @@
+{
+ "clusters": [
+  {
+   "name": "Snagging & handover inspection",
+   "tier": "A",
+   "barrier": 79,
+   "kws": [
+    {
+     "kw": "snagging company dubai",
+     "vol": 720,
+     "cpc": 24.43,
+     "cpc_aed": 89.72,
+     "cluster": "Snagging & handover inspection",
+     "tier": "A",
+     "fastwin": true
+    },
+    {
+     "kw": "snagging companies in dubai",
+     "vol": 720,
+     "cpc": 24.43,
+     "cpc_aed": 89.72,
+     "cluster": "Snagging & handover inspection",
+     "tier": "A",
+     "fastwin": true
+    },
+    {
+     "kw": "snagging dubai",
+     "vol": 320,
+     "cpc": 21.06,
+     "cpc_aed": 77.34,
+     "cluster": "Snagging & handover inspection",
+     "tier": "A",
+     "fastwin": true
+    },
+    {
+     "kw": "snagging inspection dubai",
+     "vol": 140,
+     "cpc": 13.66,
+     "cpc_aed": 50.17,
+     "cluster": "Snagging & handover inspection",
+     "tier": "A",
+     "fastwin": true
+    },
+    {
+     "kw": "property snagging dubai",
+     "vol": 140,
+     "cpc": 13.01,
+     "cpc_aed": 47.78,
+     "cluster": "Snagging & handover inspection",
+     "tier": "A",
+     "fastwin": true
+    },
+    {
+     "kw": "home inspection dubai",
+     "vol": 50,
+     "cpc": 27.77,
+     "cpc_aed": 101.99,
+     "cluster": "Snagging & handover inspection",
+     "tier": "A",
+     "fastwin": true
+    },
+    {
+     "kw": "snagging dubai cost",
+     "vol": 50,
+     "cpc": 24.86,
+     "cpc_aed": 91.3,
+     "cluster": "Snagging & handover inspection",
+     "tier": "A",
+     "fastwin": true
+    },
+    {
+     "kw": "handover inspection dubai",
+     "vol": 30,
+     "cpc": 26.93,
+     "cpc_aed": 98.9,
+     "cluster": "Snagging & handover inspection",
+     "tier": "A",
+     "fastwin": true
+    },
+    {
+     "kw": "snagging experts dubai",
+     "vol": 10,
+     "cpc": 55.58,
+     "cpc_aed": 204.12,
+     "cluster": "Snagging & handover inspection",
+     "tier": "A",
+     "fastwin": false
+    },
+    {
+     "kw": "dubai property snagging reviews",
+     "vol": 30,
+     "cpc": 7.17,
+     "cpc_aed": 26.33,
+     "cluster": "Snagging & handover inspection",
+     "tier": "A",
+     "fastwin": true
+    },
+    {
+     "kw": "dubai property snagging ae",
+     "vol": 10,
+     "cpc": 14.41,
+     "cpc_aed": 52.92,
+     "cluster": "Snagging & handover inspection",
+     "tier": "A",
+     "fastwin": false
+    },
+    {
+     "kw": "best snagging company dubai",
+     "vol": 20,
+     "cpc": 0,
+     "cpc_aed": 0.0,
+     "cluster": "Snagging & handover inspection",
+     "tier": "A",
+     "fastwin": false
+    },
+    {
+     "kw": "snagging services dubai",
+     "vol": 20,
+     "cpc": 0,
+     "cpc_aed": 0.0,
+     "cluster": "Snagging & handover inspection",
+     "tier": "A",
+     "fastwin": false
+    },
+    {
+     "kw": "dubai property snagging photos",
+     "vol": 10,
+     "cpc": 0,
+     "cpc_aed": 0.0,
+     "cluster": "Snagging & handover inspection",
+     "tier": "A",
+     "fastwin": false
+    },
+    {
+     "kw": "property snagging services in dubai",
+     "vol": 10,
+     "cpc": 0,
+     "cpc_aed": 0.0,
+     "cluster": "Snagging & handover inspection",
+     "tier": "A",
+     "fastwin": false
+    }
+   ],
+   "vol": 2280,
+   "val": 11937
+  },
+  {
+   "name": "Holiday home & short-let ops",
+   "tier": "A",
+   "barrier": 69,
+   "kws": [
+    {
+     "kw": "short term rental accommodation dubai",
+     "vol": 1900,
+     "cpc": 3.94,
+     "cpc_aed": 14.47,
+     "cluster": "Holiday home & short-let ops",
+     "tier": "A",
+     "fastwin": false
+    },
+    {
+     "kw": "short term rental properties in dubai",
+     "vol": 1900,
+     "cpc": 3.94,
+     "cpc_aed": 14.47,
+     "cluster": "Holiday home & short-let ops",
+     "tier": "A",
+     "fastwin": false
+    },
+    {
+     "kw": "holiday home management dubai",
+     "vol": 110,
+     "cpc": 45.76,
+     "cpc_aed": 168.05,
+     "cluster": "Holiday home & short-let ops",
+     "tier": "A",
+     "fastwin": true
+    },
+    {
+     "kw": "short-term rental management dubai",
+     "vol": 40,
+     "cpc": 37.04,
+     "cpc_aed": 136.03,
+     "cluster": "Holiday home & short-let ops",
+     "tier": "A",
+     "fastwin": true
+    },
+    {
+     "kw": "airbnb property management dubai",
+     "vol": 50,
+     "cpc": 17.54,
+     "cpc_aed": 64.42,
+     "cluster": "Holiday home & short-let ops",
+     "tier": "A",
+     "fastwin": true
+    },
+    {
+     "kw": "short term rental companies dubai",
+     "vol": 40,
+     "cpc": 12.73,
+     "cpc_aed": 46.75,
+     "cluster": "Holiday home & short-let ops",
+     "tier": "A",
+     "fastwin": true
+    },
+    {
+     "kw": "short term rental dubai marina",
+     "vol": 50,
+     "cpc": 4.16,
+     "cpc_aed": 15.28,
+     "cluster": "Holiday home & short-let ops",
+     "tier": "A",
+     "fastwin": true
+    },
+    {
+     "kw": "best short term rental companies in dubai",
+     "vol": 20,
+     "cpc": 10.03,
+     "cpc_aed": 36.84,
+     "cluster": "Holiday home & short-let ops",
+     "tier": "A",
+     "fastwin": true
+    },
+    {
+     "kw": "short term rental dubai hills",
+     "vol": 10,
+     "cpc": 3.15,
+     "cpc_aed": 11.57,
+     "cluster": "Holiday home & short-let ops",
+     "tier": "A",
+     "fastwin": false
+    },
+    {
+     "kw": "short term rental bur dubai",
+     "vol": 10,
+     "cpc": 1.48,
+     "cpc_aed": 5.44,
+     "cluster": "Holiday home & short-let ops",
+     "tier": "A",
+     "fastwin": false
+    },
+    {
+     "kw": "short term rental license dubai",
+     "vol": 10,
+     "cpc": 0,
+     "cpc_aed": 0.0,
+     "cluster": "Holiday home & short-let ops",
+     "tier": "A",
+     "fastwin": false
+    },
+    {
+     "kw": "short term rental agents dubai",
+     "vol": 10,
+     "cpc": 0,
+     "cpc_aed": 0.0,
+     "cluster": "Holiday home & short-let ops",
+     "tier": "A",
+     "fastwin": false
+    },
+    {
+     "kw": "arabian holidays short term rental experts in dubai",
+     "vol": 10,
+     "cpc": 0,
+     "cpc_aed": 0.0,
+     "cluster": "Holiday home & short-let ops",
+     "tier": "A",
+     "fastwin": false
+    },
+    {
+     "kw": "short term rental dubai cheap",
+     "vol": 10,
+     "cpc": 0,
+     "cpc_aed": 0.0,
+     "cluster": "Holiday home & short-let ops",
+     "tier": "A",
+     "fastwin": false
+    },
+    {
+     "kw": "dubai short term rental market challenges",
+     "vol": 10,
+     "cpc": 0,
+     "cpc_aed": 0.0,
+     "cluster": "Holiday home & short-let ops",
+     "tier": "A",
+     "fastwin": false
+    },
+    {
+     "kw": "short term rental apartments downtown dubai",
+     "vol": 10,
+     "cpc": 0,
+     "cpc_aed": 0.0,
+     "cluster": "Holiday home & short-let ops",
+     "tier": "A",
+     "fastwin": false
+    },
+    {
+     "kw": "short term rental insurance dubai",
+     "vol": 10,
+     "cpc": 0,
+     "cpc_aed": 0.0,
+     "cluster": "Holiday home & short-let ops",
+     "tier": "A",
+     "fastwin": false
+    }
+   ],
+   "vol": 4200,
+   "val": 5568
+  },
+  {
+   "name": "Valuation & golden-visa valuation",
+   "tier": "B",
+   "barrier": 90,
+   "kws": [
+    {
+     "kw": "dubai property valuation",
+     "vol": 480,
+     "cpc": 12.62,
+     "cpc_aed": 46.35,
+     "cluster": "Valuation & golden-visa valuation",
+     "tier": "B",
+     "fastwin": true
+    },
+    {
+     "kw": "property valuation companies dubai",
+     "vol": 110,
+     "cpc": 9.16,
+     "cpc_aed": 33.64,
+     "cluster": "Valuation & golden-visa valuation",
+     "tier": "B",
+     "fastwin": true
+    },
+    {
+     "kw": "property valuation company in dubai",
+     "vol": 110,
+     "cpc": 9.16,
+     "cpc_aed": 33.64,
+     "cluster": "Valuation & golden-visa valuation",
+     "tier": "B",
+     "fastwin": true
+    },
+    {
+     "kw": "golden visa property",
+     "vol": 140,
+     "cpc": 3.77,
+     "cpc_aed": 13.85,
+     "cluster": "Valuation & golden-visa valuation",
+     "tier": "B",
+     "fastwin": false
+    },
+    {
+     "kw": "portugal golden visa property",
+     "vol": 140,
+     "cpc": 3.77,
+     "cpc_aed": 13.85,
+     "cluster": "Valuation & golden-visa valuation",
+     "tier": "B",
+     "fastwin": false
+    },
+    {
+     "kw": "online property valuation dubai",
+     "vol": 10,
+     "cpc": 51.51,
+     "cpc_aed": 189.17,
+     "cluster": "Valuation & golden-visa valuation",
+     "tier": "B",
+     "fastwin": false
+    },
+    {
+     "kw": "golden visa property value",
+     "vol": 70,
+     "cpc": 5.21,
+     "cpc_aed": 19.13,
+     "cluster": "Valuation & golden-visa valuation",
+     "tier": "B",
+     "fastwin": true
+    },
+    {
+     "kw": "golden visa property valuation",
+     "vol": 70,
+     "cpc": 5.21,
+     "cpc_aed": 19.13,
+     "cluster": "Valuation & golden-visa valuation",
+     "tier": "B",
+     "fastwin": true
+    },
+    {
+     "kw": "property valuation calculator dubai",
+     "vol": 50,
+     "cpc": 5.53,
+     "cpc_aed": 20.31,
+     "cluster": "Valuation & golden-visa valuation",
+     "tier": "B",
+     "fastwin": true
+    },
+    {
+     "kw": "property valuation certificate dubai",
+     "vol": 40,
+     "cpc": 3.83,
+     "cpc_aed": 14.07,
+     "cluster": "Valuation & golden-visa valuation",
+     "tier": "B",
+     "fastwin": false
+    },
+    {
+     "kw": "rak golden visa property",
+     "vol": 10,
+     "cpc": 6.64,
+     "cpc_aed": 24.39,
+     "cluster": "Valuation & golden-visa valuation",
+     "tier": "B",
+     "fastwin": false
+    },
+    {
+     "kw": "sharjah golden visa property",
+     "vol": 20,
+     "cpc": 3.11,
+     "cpc_aed": 11.42,
+     "cluster": "Valuation & golden-visa valuation",
+     "tier": "B",
+     "fastwin": false
+    },
+    {
+     "kw": "abu dhabi golden visa property",
+     "vol": 20,
+     "cpc": 2.91,
+     "cpc_aed": 10.69,
+     "cluster": "Valuation & golden-visa valuation",
+     "tier": "B",
+     "fastwin": false
+    },
+    {
+     "kw": "dubai land department property valuation",
+     "vol": 10,
+     "cpc": 5.79,
+     "cpc_aed": 21.26,
+     "cluster": "Valuation & golden-visa valuation",
+     "tier": "B",
+     "fastwin": false
+    },
+    {
+     "kw": "golden visa property requirements",
+     "vol": 30,
+     "cpc": 1.86,
+     "cpc_aed": 6.83,
+     "cluster": "Valuation & golden-visa valuation",
+     "tier": "B",
+     "fastwin": false
+    },
+    {
+     "kw": "uae golden visa property investment",
+     "vol": 70,
+     "cpc": 0,
+     "cpc_aed": 0.0,
+     "cluster": "Valuation & golden-visa valuation",
+     "tier": "B",
+     "fastwin": false
+    },
+    {
+     "kw": "uae golden visa property investors",
+     "vol": 70,
+     "cpc": 0,
+     "cpc_aed": 0.0,
+     "cluster": "Valuation & golden-visa valuation",
+     "tier": "B",
+     "fastwin": false
+    },
+    {
+     "kw": "greece golden visa property investment",
+     "vol": 10,
+     "cpc": 0,
+     "cpc_aed": 0.0,
+     "cluster": "Valuation & golden-visa valuation",
+     "tier": "B",
+     "fastwin": false
+    },
+    {
+     "kw": "golden visa property purchase",
+     "vol": 10,
+     "cpc": 0,
+     "cpc_aed": 0.0,
+     "cluster": "Valuation & golden-visa valuation",
+     "tier": "B",
+     "fastwin": false
+    },
+    {
+     "kw": "portugal golden visa property investment",
+     "vol": 10,
+     "cpc": 0,
+     "cpc_aed": 0.0,
+     "cluster": "Valuation & golden-visa valuation",
+     "tier": "B",
+     "fastwin": false
+    },
+    {
+     "kw": "dubai golden visa property price",
+     "vol": 10,
+     "cpc": 0,
+     "cpc_aed": 0.0,
+     "cluster": "Valuation & golden-visa valuation",
+     "tier": "B",
+     "fastwin": false
+    },
+    {
+     "kw": "golden visa property greece",
+     "vol": 10,
+     "cpc": 0,
+     "cpc_aed": 0.0,
+     "cluster": "Valuation & golden-visa valuation",
+     "tier": "B",
+     "fastwin": false
+    },
+    {
+     "kw": "spain golden visa property",
+     "vol": 10,
+     "cpc": 0,
+     "cpc_aed": 0.0,
+     "cluster": "Valuation & golden-visa valuation",
+     "tier": "B",
+     "fastwin": false
+    },
+    {
+     "kw": "bahrain golden visa property",
+     "vol": 10,
+     "cpc": 0,
+     "cpc_aed": 0.0,
+     "cluster": "Valuation & golden-visa valuation",
+     "tier": "B",
+     "fastwin": false
+    },
+    {
+     "kw": "portugal golden visa property requirements",
+     "vol": 10,
+     "cpc": 0,
+     "cpc_aed": 0.0,
+     "cluster": "Valuation & golden-visa valuation",
+     "tier": "B",
+     "fastwin": false
+    },
+    {
+     "kw": "property valuation dubai cost",
+     "vol": 10,
+     "cpc": 0,
+     "cpc_aed": 0.0,
+     "cluster": "Valuation & golden-visa valuation",
+     "tier": "B",
+     "fastwin": false
+    },
+    {
+     "kw": "property valuation firm in dubai",
+     "vol": 10,
+     "cpc": 0,
+     "cpc_aed": 0.0,
+     "cluster": "Valuation & golden-visa valuation",
+     "tier": "B",
+     "fastwin": false
+    },
+    {
+     "kw": "property valuation services dubai",
+     "vol": 10,
+     "cpc": 0,
+     "cpc_aed": 0.0,
+     "cluster": "Valuation & golden-visa valuation",
+     "tier": "B",
+     "fastwin": false
+    },
+    {
+     "kw": "list of property valuation companies in dubai",
+     "vol": 10,
+     "cpc": 0,
+     "cpc_aed": 0.0,
+     "cluster": "Valuation & golden-visa valuation",
+     "tier": "B",
+     "fastwin": false
+    },
+    {
+     "kw": "property valuation calculator free dubai",
+     "vol": 10,
+     "cpc": 0,
+     "cpc_aed": 0.0,
+     "cluster": "Valuation & golden-visa valuation",
+     "tier": "B",
+     "fastwin": false
+    }
+   ],
+   "vol": 1580,
+   "val": 2650
+  },
+  {
+   "name": "Mortgage (commercial subset only)",
+   "tier": "C",
+   "barrier": 198,
+   "kws": [
+    {
+     "kw": "dubai mortgage broker",
+     "vol": 480,
+     "cpc": 13.87,
+     "cpc_aed": 50.94,
+     "cluster": "Mortgage (commercial subset only)",
+     "tier": "C",
+     "fastwin": false
+    },
+    {
+     "kw": "mortgage advisor dubai",
+     "vol": 480,
+     "cpc": 13.87,
+     "cpc_aed": 50.94,
+     "cluster": "Mortgage (commercial subset only)",
+     "tier": "C",
+     "fastwin": false
+    },
+    {
+     "kw": "best mortgage broker in dubai",
+     "vol": 40,
+     "cpc": 20.36,
+     "cpc_aed": 74.77,
+     "cluster": "Mortgage (commercial subset only)",
+     "tier": "C",
+     "fastwin": false
+    },
+    {
+     "kw": "non-resident mortgage dubai",
+     "vol": 140,
+     "cpc": 5.44,
+     "cpc_aed": 19.98,
+     "cluster": "Mortgage (commercial subset only)",
+     "tier": "C",
+     "fastwin": false
+    },
+    {
+     "kw": "mortgage pre approval dubai",
+     "vol": 40,
+     "cpc": 16.95,
+     "cpc_aed": 62.25,
+     "cluster": "Mortgage (commercial subset only)",
+     "tier": "C",
+     "fastwin": false
+    },
+    {
+     "kw": "mortgage consultant dubai",
+     "vol": 70,
+     "cpc": 8.26,
+     "cpc_aed": 30.33,
+     "cluster": "Mortgage (commercial subset only)",
+     "tier": "C",
+     "fastwin": false
+    },
+    {
+     "kw": "equity release mortgage dubai",
+     "vol": 30,
+     "cpc": 11.75,
+     "cpc_aed": 43.15,
+     "cluster": "Mortgage (commercial subset only)",
+     "tier": "C",
+     "fastwin": false
+    },
+    {
+     "kw": "top mortgage brokers in dubai",
+     "vol": 30,
+     "cpc": 6.1,
+     "cpc_aed": 22.4,
+     "cluster": "Mortgage (commercial subset only)",
+     "tier": "C",
+     "fastwin": false
+    },
+    {
+     "kw": "mortgage broker license dubai",
+     "vol": 10,
+     "cpc": 17.93,
+     "cpc_aed": 65.85,
+     "cluster": "Mortgage (commercial subset only)",
+     "tier": "C",
+     "fastwin": false
+    },
+    {
+     "kw": "huspy mortgage broker dubai",
+     "vol": 10,
+     "cpc": 1.09,
+     "cpc_aed": 4.0,
+     "cluster": "Mortgage (commercial subset only)",
+     "tier": "C",
+     "fastwin": false
+    },
+    {
+     "kw": "list of mortgage brokers in dubai",
+     "vol": 10,
+     "cpc": 0,
+     "cpc_aed": 0.0,
+     "cluster": "Mortgage (commercial subset only)",
+     "tier": "C",
+     "fastwin": false
+    },
+    {
+     "kw": "hsbc dubai non resident mortgage",
+     "vol": 10,
+     "cpc": 0,
+     "cpc_aed": 0.0,
+     "cluster": "Mortgage (commercial subset only)",
+     "tier": "C",
+     "fastwin": false
+    },
+    {
+     "kw": "lion mortgage consultants dubai",
+     "vol": 10,
+     "cpc": 0,
+     "cpc_aed": 0.0,
+     "cluster": "Mortgage (commercial subset only)",
+     "tier": "C",
+     "fastwin": false
+    },
+    {
+     "kw": "expert mortgage broker dubai",
+     "vol": 10,
+     "cpc": 0,
+     "cpc_aed": 0.0,
+     "cluster": "Mortgage (commercial subset only)",
+     "tier": "C",
+     "fastwin": false
+    },
+    {
+     "kw": "dubai islamic bank non resident mortgage",
+     "vol": 10,
+     "cpc": 0,
+     "cpc_aed": 0.0,
+     "cluster": "Mortgage (commercial subset only)",
+     "tier": "C",
+     "fastwin": false
+    },
+    {
+     "kw": "refinance mortgage dubai",
+     "vol": 10,
+     "cpc": 0,
+     "cpc_aed": 0.0,
+     "cluster": "Mortgage (commercial subset only)",
+     "tier": "C",
+     "fastwin": false
+    },
+    {
+     "kw": "mortgage advisor dubai salary",
+     "vol": 10,
+     "cpc": 0,
+     "cpc_aed": 0.0,
+     "cluster": "Mortgage (commercial subset only)",
+     "tier": "C",
+     "fastwin": false
+    },
+    {
+     "kw": "senior mortgage advisor salary dubai",
+     "vol": 10,
+     "cpc": 0,
+     "cpc_aed": 0.0,
+     "cluster": "Mortgage (commercial subset only)",
+     "tier": "C",
+     "fastwin": false
+    },
+    {
+     "kw": "non resident mortgage dubai requirements",
+     "vol": 10,
+     "cpc": 0,
+     "cpc_aed": 0.0,
+     "cluster": "Mortgage (commercial subset only)",
+     "tier": "C",
+     "fastwin": false
+    },
+    {
+     "kw": "home matters mortgage consultants dubai",
+     "vol": 10,
+     "cpc": 0,
+     "cpc_aed": 0.0,
+     "cluster": "Mortgage (commercial subset only)",
+     "tier": "C",
+     "fastwin": false
+    },
+    {
+     "kw": "uk mortgage for expats in dubai",
+     "vol": 10,
+     "cpc": 0,
+     "cpc_aed": 0.0,
+     "cluster": "Mortgage (commercial subset only)",
+     "tier": "C",
+     "fastwin": false
+    },
+    {
+     "kw": "mortgage broker fees dubai",
+     "vol": 10,
+     "cpc": 0,
+     "cpc_aed": 0.0,
+     "cluster": "Mortgage (commercial subset only)",
+     "tier": "C",
+     "fastwin": false
+    }
+   ],
+   "vol": 1450,
+   "val": 4027
+  }
+ ],
+ "forecast": [
+  {
+   "month": 1,
+   "stage": "indexing",
+   "impressions": 475,
+   "clicks": 0,
+   "ctr": 0.0,
+   "position": "45+"
+  },
+  {
+   "month": 2,
+   "stage": "indexing",
+   "impressions": 951,
+   "clicks": 19,
+   "ctr": 0.002,
+   "position": "35-45"
+  },
+  {
+   "month": 3,
+   "stage": "crawled, weak",
+   "impressions": 1902,
+   "clicks": 38,
+   "ctr": 0.004,
+   "position": "28-38"
+  },
+  {
+   "month": 4,
+   "stage": "page 3",
+   "impressions": 3328,
+   "clicks": 76,
+   "ctr": 0.008,
+   "position": "22-30"
+  },
+  {
+   "month": 5,
+   "stage": "page 3",
+   "impressions": 4279,
+   "clicks": 114,
+   "ctr": 0.012,
+   "position": "18-26"
+  },
+  {
+   "month": 6,
+   "stage": "page 2",
+   "impressions": 5706,
+   "clicks": 190,
+   "ctr": 0.02,
+   "position": "14-20"
+  },
+  {
+   "month": 7,
+   "stage": "page 2",
+   "impressions": 6657,
+   "clicks": 266,
+   "ctr": 0.028,
+   "position": "11-16"
+  },
+  {
+   "month": 8,
+   "stage": "page 1 edge",
+   "impressions": 7608,
+   "clicks": 361,
+   "ctr": 0.038,
+   "position": "9-13"
+  },
+  {
+   "month": 9,
+   "stage": "page 1 edge",
+   "impressions": 8178,
+   "clicks": 437,
+   "ctr": 0.046,
+   "position": "7-11"
+  },
+  {
+   "month": 10,
+   "stage": "page 1",
+   "impressions": 8749,
+   "clicks": 523,
+   "ctr": 0.055,
+   "position": "5-9"
+  },
+  {
+   "month": 11,
+   "stage": "page 1",
+   "impressions": 9034,
+   "clicks": 580,
+   "ctr": 0.061,
+   "position": "4-8"
+  },
+  {
+   "month": 12,
+   "stage": "page 1 settled",
+   "impressions": 9224,
+   "clicks": 618,
+   "ctr": 0.065,
+   "position": "4-6"
+  }
+ ],
+ "total_vol": 9510,
+ "total_val": 24182,
+ "rev_lo": 28607,
+ "rev_hi": 78722,
+ "enq_rate": 0.03,
+ "model": {
+  "Valuation & golden-visa valuation": {
+   "conv": 0.33,
+   "unit_lo": 26000,
+   "unit_hi": 70000,
+   "note": "valuation request -> listing. 2% commission on AED 1.3M-3.5M."
+  },
+  "Snagging & handover inspection": {
+   "conv": 0.6,
+   "unit_lo": 150,
+   "unit_hi": 300,
+   "note": "referred to an inspection partner for a fee; the owner relationship is the real asset."
+  },
+  "Holiday home & short-let ops": {
+   "conv": 0.35,
+   "unit_lo": 500,
+   "unit_hi": 2000,
+   "note": "landlord referred to a short-let operator for an onboarding fee."
+  },
+  "Mortgage (commercial subset only)": {
+   "conv": 0.3,
+   "unit_lo": 400,
+   "unit_hi": 1200,
+   "note": "referred to a mortgage broker; they earn 0.5-1% of the loan."
+  }
+ },
+ "forecast18": [
+  {
+   "month": 1,
+   "impressions": 475,
+   "clicks": 0,
+   "ctr": 0.0,
+   "rev_lo": 0,
+   "rev_hi": 0
+  },
+  {
+   "month": 2,
+   "impressions": 951,
+   "clicks": 19,
+   "ctr": 0.002,
+   "rev_lo": 66,
+   "rev_hi": 232
+  },
+  {
+   "month": 3,
+   "impressions": 1902,
+   "clicks": 38,
+   "ctr": 0.004,
+   "rev_lo": 133,
+   "rev_hi": 464
+  },
+  {
+   "month": 4,
+   "impressions": 3328,
+   "clicks": 76,
+   "ctr": 0.008,
+   "rev_lo": 267,
+   "rev_hi": 929
+  },
+  {
+   "month": 5,
+   "impressions": 4279,
+   "clicks": 114,
+   "ctr": 0.012,
+   "rev_lo": 1214,
+   "rev_hi": 3583
+  },
+  {
+   "month": 6,
+   "impressions": 5706,
+   "clicks": 190,
+   "ctr": 0.02,
+   "rev_lo": 2295,
+   "rev_hi": 6703
+  },
+  {
+   "month": 7,
+   "impressions": 6657,
+   "clicks": 266,
+   "ctr": 0.028,
+   "rev_lo": 4189,
+   "rev_hi": 12012
+  },
+  {
+   "month": 8,
+   "impressions": 7608,
+   "clicks": 361,
+   "ctr": 0.038,
+   "rev_lo": 6150,
+   "rev_hi": 17553
+  },
+  {
+   "month": 9,
+   "impressions": 8178,
+   "clicks": 437,
+   "ctr": 0.046,
+   "rev_lo": 9671,
+   "rev_hi": 27242
+  },
+  {
+   "month": 10,
+   "impressions": 8749,
+   "clicks": 523,
+   "ctr": 0.055,
+   "rev_lo": 13225,
+   "rev_hi": 37047
+  },
+  {
+   "month": 11,
+   "impressions": 9034,
+   "clicks": 580,
+   "ctr": 0.061,
+   "rev_lo": 17493,
+   "rev_hi": 48694
+  },
+  {
+   "month": 12,
+   "impressions": 9224,
+   "clicks": 618,
+   "ctr": 0.065,
+   "rev_lo": 20880,
+   "rev_hi": 57918
+  },
+  {
+   "month": 13,
+   "impressions": 9319,
+   "clicks": 646,
+   "ctr": 0.068,
+   "rev_lo": 24641,
+   "rev_hi": 68121
+  },
+  {
+   "month": 14,
+   "impressions": 9319,
+   "clicks": 665,
+   "ctr": 0.07,
+   "rev_lo": 27148,
+   "rev_hi": 74923
+  },
+  {
+   "month": 15,
+   "impressions": 9414,
+   "clicks": 684,
+   "ctr": 0.072,
+   "rev_lo": 28841,
+   "rev_hi": 79535
+  },
+  {
+   "month": 16,
+   "impressions": 9414,
+   "clicks": 694,
+   "ctr": 0.073,
+   "rev_lo": 30095,
+   "rev_hi": 82936
+  },
+  {
+   "month": 17,
+   "impressions": 9510,
+   "clicks": 703,
+   "ctr": 0.074,
+   "rev_lo": 30941,
+   "rev_hi": 85242
+  },
+  {
+   "month": 18,
+   "impressions": 9510,
+   "clicks": 713,
+   "ctr": 0.075,
+   "rev_lo": 31788,
+   "rev_hi": 87548
+  }
+ ],
+ "lag_months": 3,
+ "first_30k_month": 16
+}

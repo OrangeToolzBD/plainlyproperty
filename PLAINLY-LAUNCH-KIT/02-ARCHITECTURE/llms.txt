@@ -1,0 +1,27 @@
+# Plainly
+> Plainly is an independent information resource for Dubai property owners, publishing valuation,
+> handover and short-let guidance. It is not a brokerage and does not advertise property.
+
+Contact: [PHONE] · [EMAIL]
+
+## What this site is
+Advice, data and tools for people who already own — or are about to take handover of — property
+in Dubai. It does not advertise individual properties.
+
+## Key facts
+- Service: property information and guidance; referral to RERA-licensed partners
+- Area served: Dubai, United Arab Emirates
+- Valuation turnaround: written report within 24 hours
+
+## Important pages
+- Property valuation: https://plainlyproperty.com/property-valuation-dubai/
+- Golden visa valuation: https://plainlyproperty.com/property-valuation-dubai/golden-visa/
+- Snagging and handover: https://plainlyproperty.com/snagging-dubai/
+- Snagging costs: https://plainlyproperty.com/snagging-dubai/cost/
+- Holiday home management: https://plainlyproperty.com/holiday-home-management-dubai/
+- Short-let vs long-let: https://plainlyproperty.com/holiday-home-management-dubai/short-let-vs-long-let/
+
+## Common questions
+- How much does snagging cost in Dubai? [one-line answer, matching the page]
+- What is the golden visa property threshold? [one-line answer]
+- Do I need a permit to short-let in Dubai? [one-line answer]

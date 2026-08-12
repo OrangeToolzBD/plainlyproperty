@@ -1,0 +1,66 @@
+[
+ {
+  "enq": "1.0% pessimistic",
+  "close": "1-in-4",
+  "cost_enq": 4635,
+  "cost_listing": 18540,
+  "roas_lo": 1.4,
+  "roas_hi": 3.8
+ },
+ {
+  "enq": "1.0% pessimistic",
+  "close": "1-in-3",
+  "cost_enq": 4635,
+  "cost_listing": 14045,
+  "roas_lo": 1.9,
+  "roas_hi": 5.0
+ },
+ {
+  "enq": "1.5% cautious",
+  "close": "1-in-4",
+  "cost_enq": 3090,
+  "cost_listing": 12360,
+  "roas_lo": 2.1,
+  "roas_hi": 5.7
+ },
+ {
+  "enq": "1.5% cautious",
+  "close": "1-in-3",
+  "cost_enq": 3090,
+  "cost_listing": 9363,
+  "roas_lo": 2.8,
+  "roas_hi": 7.5
+ },
+ {
+  "enq": "2.0% mid",
+  "close": "1-in-4",
+  "cost_enq": 2317,
+  "cost_listing": 9270,
+  "roas_lo": 2.8,
+  "roas_hi": 7.6
+ },
+ {
+  "enq": "2.0% mid",
+  "close": "1-in-3",
+  "cost_enq": 2317,
+  "cost_listing": 7022,
+  "roas_lo": 3.7,
+  "roas_hi": 10.0
+ },
+ {
+  "enq": "3.0% original",
+  "close": "1-in-4",
+  "cost_enq": 1545,
+  "cost_listing": 6180,
+  "roas_lo": 4.2,
+  "roas_hi": 11.3
+ },
+ {
+  "enq": "3.0% original",
+  "close": "1-in-3",
+  "cost_enq": 1545,
+  "cost_listing": 4681,
+  "roas_lo": 5.6,
+  "roas_hi": 15.0
+ }
+]
